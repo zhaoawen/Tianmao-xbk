@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../layout/css/all.css">
+    <link rel="stylesheet" href="../source/chongzhi.css">
+    <link rel="stylesheet" href="../code/星巴克.css">
+    <title>星巴克|用每一杯咖啡传递星巴克独特的咖啡体验</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+letter-spacing: 0.4px;
+line-height: 1;
+/* min-width:100%; */
+}
+.dianji{
+display: none;
+font-size: 18px;
+font-weight: 900;
+background-color:white;
+height:80%;
+width: 90%;
+overflow-x:hidden;
+overflow-y:scroll;
+/* white-space: nowrap;  */
+position:absolute;
+top: 2%;
+padding-top: 20%;
+padding-left: 5%;
+left: 3%;
+z-index: 9999;
+}
+.dianji div{
+line-height: 200%;
+}
+#jiange:hover .dianji{
+display: block;
+}
+.line{
+width: 100%;
+height: 1px;
+margin: 20px 0;
+background-color: #E0E0E0;
+}
+.deng{
+font-weight:lighter;
+position: relative;
+}
+#qwe{
+vertical-align: middle;
+}
+a{
+text-decoration: none;
+}
+.box1 a{
+text-decoration: none;
+color: #000;
+}
+.bo a{
+color:#9E9E9E;
+font-weight:200;
+
+}
+.bo{
+margin-top: 32%;
+}
+.denglu a,
+.deng a{
+text-decoration: none;
+color: #00A862;
+font-weight: 500;
+}
+.clearfix::before,.clearfix::after{
+content: '';
+display: table;
+clear: both;
+} 
+.box1{
+/* box-sizing:border-box;  */
+font-size: 17px ;
+/* max-width: 10%; */
+}
+p{
+font-size: 16px;
+}
+#img{
+overflow: hidden;
+width: 36px;
+height: 36px;
+float: left;
+border-radius: 50%;
+background-size: cover;
+background-image: url(https://www-static.chinacdn.starbucks.com.cn/prod/assets/images/logo.svg);
+cursor:pointer;
+}
+.menu{
+padding-top: 1%;
+padding-left: 1%;
+height: 100%;
+width: 28.5%;
+box-sizing:border-box; 
+position: fixed;
+box-shadow:2.5px 2.5px rgba(143, 138, 138, 0.1);
+z-index: 999;
+background-color: white;
+}
+.box1 .menu li{
+float: left;
+margin-left: 4%;
+font-weight: 600;
+margin-top: 2%;
+}
+.menu i{
+font-size: 20px;
+color: #A3A3A3;
+}
+.wenzi{
+line-height: 160%;
+width: 75%;
+font-size: 26px;
+margin-left: 15%;
+margin-top: 70%;
+font-weight: 900;
+}
+.denglu{
+margin-left: 15%;
+margin-top: 8%;
+font-weight:lighter;
+/* position: relative;
+margin-top: 8%;
+margin-left: 2%; */
+}
+#asd{
+background: none;
+border: 1px solid #00A862;
+border-radius: 48px;
+box-sizing: border-box;
+color: #00A862;
+font-weight: 400;
+padding:1%  3%;
+margin-left: 10%;
+}
+#jiange img{
+float: right;
+cursor:pointer;
+overflow: hidden;
+margin-right: 2%;
+/* background-color: red; */
+}
+.box2{
+margin-left: 28.5%;
+margin-top: 0px;
+width: 71.5%;
+}
+.youshangjiao ul{  
+margin: 0;  
+padding: 0;
+/* background-color: red;   */
+} 
+.youshangjiao img{
+border-radius: 5px;
+transition:all .5s;
+}
+.youshangjiao li{
+
+float: left;
+margin-top: 4%;
+margin-left: 2%;
+width: 31%;
+}
+.youshangjiao img:hover{
+transform:translate3d(0,-5px,0);
+box-shadow: 0 2px 2px 2px rgba(0, 0,0, .2);
+}
+.kong{
+margin-top: -1%;
+background-color:#F7F7F7;
+}
+.club{
+text-decoration: none;
+margin-top: 23%;
+width: 100%;
+padding-bottom: 5%;
+background-color: white;
+position: relative;
+}
+.club p{
+font-size: 23px;
+margin-top: 2%;
+margin-left: 10%;
+position: relative;
+}
+.club span{
+display: block;
+font-size: 17px;
+margin-top: 5%;
+margin-left: 10%;
+width: 41%;
+color: #707070;
+overflow: hidden;
+line-height: 30px;
+margin-bottom: 5%;
+}
+#zhucee{
+text-decoration: none;
+background: none;
+border: 1px solid #00A862;  
+padding:0.8%  2%;
+border-radius: 48px;
+color: #00A862;
+font-weight: 500;
+margin-left: 10%;
+} 
+#dengluu{
+text-decoration: none;
+background: none;
+border: 1px solid #00A862;
+border-radius: 48px;
+color: #00A862;
+font-weight: 500;
+outline: none;
+overflow: hidden;
+padding:0.8%  2%;
+margin-left: 2%;
+/* position: absolute;
+margin-top:2.5% ;
+left: 42%; */
+}
+#xingxing{
+position: absolute;
+left: 65%;
+top: 45%;
+}
+#more{
+font-size: 17px;
+color: #C2A661;
+margin-top: -8%;
+text-decoration: none;
+}
+.jingxuan{
+margin-bottom: 6%;
+background-color: #F7F7F7;
+}
+.jingxuan a{
+text-decoration: none;
+}
+.jingxuan .xbk{
+margin-top: 3.5%;
+text-align: center;
+font-size: 23px;
+color: #000;
+}
+.jingxuan span{
+display: block;
+text-align: center;
+margin-top: 3%;
+color: #707070;
+}
+#jingtu li{
+float: left;
+margin-top: 4%;
+margin-left: 5%;
+margin-bottom: -2%;
+background-color: white;
+border: 1.5px solid #DCDCDC;
+border-top: none;
+border-radius: 8px;
+width: 19%;
+transition:all .5s;
+}
+#jingtu li:hover{
+transform:translate3d(0,-5px,0);
+box-shadow: 0 1px 1px 1px rgba(146, 145, 145, 0.2);
+}
+#jingtu img{
+margin-top: -20%;
+/* width: 65%; */
+}
+.div3 img{
+width: 48%;
+}
+.div4 img{
+width: 50%;
+}
+#jingtu{
+margin-top: 5%;
+text-align: center;
+margin-left: 5%;
+}
+.head {
+color: black;
+font-size: 16px;
+font-weight: bold;
+margin-top: 10%;
+}
+#jingtu span{
+font-size: 14px;
+margin-top: 10%;
+margin-bottom: 10%;
+}
+#moree{
+font-size: 12px;
+color: #C2A661;
+margin-top: 15%;
+padding-bottom: 5%;
+}
+.jiangtang{
+background-color:white;
+width: 100%;
+}
+.h{
+padding-top: 3%;
+text-align: center;
+font-size: 23px;
+color: #000;
+line-height: 200%;
+margin-bottom: 5%;
+}
+.jiangtang p{
+color: #6F6F6F;
+}
+.jiangtangg p{
+color: #6F6F6F;
+}
+.jiangtangg li{
+/* justify-content: space-between; */
+float: left;
+margin-bottom:5%;
+/* transition 别放hover里，放到img里，这样移入移出一样缓慢，不然只对hover移上去有缓慢效果  */
+transition:all .5s;
+}
+.jiangtangg img{
+border-radius: 8px 8px 0 0;
+box-shadow: 0 0 0 2px rgba(146, 145, 145, 0.2);
+}
+#end p{
+font-size: 10px;
+font-family:"Gotham", Helvetica, Arial, PingFangSC-Regular, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+#end{
+display: flex;
+justify-content: center;
+text-decoration: none;
+background-color: white;
+color: rgb(121, 121, 121);
+margin-bottom: 2%;
+padding-top: 5%;
+}
+.jiangtangg .zhishi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C2A661;
+    position: relative;
+    margin-top: -11%;
+    color: white;
+    width: 30%;
+    height: 20%;
+    font-size: 11px;
+    position: relative;
+    top: 30px;
+    height: 20px;
+    z-index: 1;
+}
+.jiangtangg .bottom{
+background-color: white;
+box-shadow:0 2px 2px 2px rgba(146, 145, 145, 0.2);
+border-radius: 0 0 8px 8px;
+color: #000;
+width: 99.5%;
+height: 48px;
+display: flex;
+align-items: center;
+text-indent: 1em; 
+}
+.jiangtangg a{
+transition: all 1s;
+height: 150px;
+}
+.jiangtangg li:hover{
+transform:translate3d(0,-5px,0);
+border-radius: 8px;
+box-shadow: 3px 4px 4px rgba(146, 145, 145, 0.2);
+}
+#jinghui{
+width: 13px;
+margin-right: 1%;
+}
+#end:hover{
+color: #000;
+}
+.jiangtangg img{
+width: 180px;
+height: 90px;
+}
+.jiangtangg li{
+    float: left;
+    margin-top: 4%;
+    margin-left: 1%;
+    margin-bottom: -2%;
+    background-color: white;
+    border-top: none;
+    border-radius: 8px;
+    transition:all .5s;
+}
+@media (min-width: 1024px) and (max-width:9999px) {
+.box3{
+    display: none;
+}
+.jiangtangg{
+    display: flex;
+    justify-content: center;
+}
+.jiangtangg li{
+    
+    margin:0  1.5%;
+}
+.jiangtangg li:hover{
+    transform:translate3d(0,-5px,0);
+    border-radius: 8px;
+    box-shadow: 3px 4px 4px rgba(146, 145, 145, 0.2);
+    }
+}
+@media (min-width: 641px) and (max-width: 1024px){
+    .jiangtangg .bottom{
+        box-shadow:0 2px 2px 2px rgba(146, 145, 145, 0.2);
+    }
+    .jiangtangg{
+        display: flex;
+        justify-content: center;
+    }
+    .jiangtangg li:hover{
+        transform:translate3d(0,-5px,0);
+        border-radius: 8px;
+        box-shadow: 3px 4px 4px rgba(146, 145, 145, 0.2);
+    }
+        .jiangtangg li{
+            flex: 1;
+            width: 0;
+            min-width: 0;
+        }
+        .jiangtangg img{
+            width: 100%;
+        }
+    .box3{
+        display:none;
+    }
+    .menu{
+        padding-top: 1%;
+        width: 100%;
+        padding-bottom: 2%;
+        position: relative;
+    }
+    .wenzi{
+        font-size: 26px;
+        margin-left:1%;
+        margin-top: 8%;
+        font-weight: 900;
+    }
+    .denglu{
+        margin-left: 1%;
+        margin-top: 3%;
+    }
+    #asd{
+        padding:0.5%  1%;
+        margin-left: 3%;
+    }
+    .box2{
+        width: 100%;
+        margin-left: -0%;
+    }
+    .jiangtangg li:hover{
+        transform:translate3d(0,-5px,0);
+        border-radius: 8px;
+        box-shadow: 3px 4px 4px rgba(146, 145, 145, 0.2);
+        }
+}
+@media (max-width: 640px){
+    .jiangtangg li:hover{
+        transform:translate3d(0,-5px,0);
+        border-radius: 8px;
+        box-shadow: 3px 4px 4px rgba(146, 145, 145, 0.2);
+        }
+        .jiangtangg{
+            margin-left: -5%;
+        }
+    .jiangtangg li{
+        float: left;
+        margin-top: 7%;
+        margin-left: 8%;
+        margin-bottom: -2%;
+        background-color: white;
+        border-top: none;
+        border-radius: 8px;
+        width: 40%;
+        transition:all .5s;
+    }
+    .jiangtangg img{
+        width: 100%;
+    }
+    .jiangtangg .zhishi{
+        position: relative;
+        top: 30px;
+        height: 20px;
+        z-index: 1;
+    }
+    #end{
+        /* display: block; */
+        padding-left: 10%;
+    }
+    
+.menu{
+        padding-top: 1%;
+        width: 100%;
+        padding-bottom: 2%;
+        position: relative;
+    }
+    .menu li,.box1 a,.box1 i {
+        display: none;
+    }
+    .wenzi{
+        font-size: 26px;
+        margin-top: 1%;
+        margin-left:1%;
+        font-weight: 900;
+    }
+    .denglu{
+        margin-left: 1%;
+        margin-top: 3%;
+        display: none;
+    }
+    #asd{
+        padding:0.5%  1%;
+        margin-left: 3%;
+        display: none;
+    }
+    .box2{
+        width: 100%;
+        margin-left: -0%;
+    }
+    .youshangjiao li{
+        float: none;
+        width: 96%;
+    }
+    .club{
+        margin-top: 0%;
+    }
+    .club p{
+        margin-left: 40%;
+    }
+    #xingxing{
+        position: relative;
+        display: block;
+        left: 20%;
+        margin-top: 5%;
+        width: 60%;
+    }
+    .club span{
+        height: 50%;
+        width: auto;
+        margin-left: 5%;
+        display:inline-block;
+        font-size: 17px;
+        color: #707070;
+        overflow: hidden;
+        line-height: 30px;
+        margin-top: 5%;
+    }
+    #zhucee{
+        margin-left: 38%;
+    }
+    .jingxuan{
+        margin-top: 5%;
+    }
+    #jingtu li{
+        float: left;
+        margin-top: 10%;
+        margin-left: 5%;
+        margin-bottom: -2%;
+        background-color: white;
+        border: 1.5px solid #DCDCDC;
+        border-top: none;
+        border-radius: 8px;
+        width: 40%;
+        transition:all .5s;
+    }
+    .box3{
+        /* display: block; */
+        position: fixed;
+        bottom:0;
+        z-index:999;
+        width: 100%;
+        background-color: white;
+    }
+    .flex{
+        display:flex;
+        /* position: fixed; */
+        box-shadow: 0 0 4px rgb(0 0 0 / 12%);
+        height: 50%;
+    }
+    .box3 li{
+        flex: 1;
+        margin-left: 8%;
+        background-color: white;
+        box-shadow: 2px -2px -2px rgba(0, 0,0, .2);
+    }
+    .zhanghu{
+        margin-left: -15%;
+    }
+    #end{
+        margin-bottom: 20%;
+    }
+    .box3 a{
+        color: #6F6F6F;;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <ul class="menu">
+            <a href="../code/平常.html"><div id="img"></div></a>
+            <li >
+                <a href="https://www.starbucks.com.cn/stores/?features=&bounds=108.909782%2C34.156648%2C108.914154%2C34.158979" target="_self">门店</a>
+            </li>
+            <li>
+                <a href="https://www.starbucks.com.cn/account/#/" target="_self">我的账户</a>
+            </li>
+            <li>
+                <a href="https://www.starbucks.com.cn/menu/" target="_self">菜单</a>
+            </li>
+            <i  id="jiange" >
+                <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-hamburger.svg" alt="">
+                <div class="dianji">
+                    <ul class="menuu">
+                        <a href="#">
+                            <div>门店<br></div>
+                        </a>
+                        <a href="#">
+                            <div>星享俱乐部</div>
+                        </a>
+                        <a href="#">
+                            <div>菜单</div>
+                        </a>
+                        <div class="line"></div>
+                        <a href="#">
+                            <div>星巴克移动应用</div>
+                        </a>
+                        <a href="#">
+                            <div>星礼卡</div>
+                        </a>
+                        <a href="#">
+                            <div>星巴克臻选™</div>
+                        </a>
+                        <a href="#">
+                            <div>啡快™ - 在线点 到店取</div>
+                        </a>
+                        <a href="#">
+                            <div>专星送™</div>
+                        </a>
+                        <a href="#">
+                            <div>咖啡星讲堂</div>
+                        </a>
+                        <a href="#">
+                            <div>上海烘培工坊</div>
+                        </a>
+                        <a href="#">
+                            <div>关于星巴克</div>
+                        </a>
+                        <a href="#">
+                            <div>帮助中心</div>
+                        </a>
+                        <li class="line"></li>
+                        <p class="bo">
+                            <a href="javascript:;">English</a>
+                            <a href="javascript:;">隐私政策</a>
+                            <a href="javascript:;">使用条款</a>
+                        </p>
+                    </ul>
+                </div>
+            </i>
+
+            <div class="wenzi">
+                心情惬意，来杯咖啡吧 ☕
+            </div>
+            <p class="denglu clearfix">
+                <a href="https://www.starbucks.com.cn/account/#/"><img id="qwe" src="https://www.starbucks.com.cn/assets/icons/icon-account.svg" alt=""> </a>
+                <a href="https://www.starbucks.com.cn/account/#/" target="_self">
+&nbsp;登录
+                </a>
+                <a href="https://www.starbucks.com.cn/account/register" target="_self" id="asd" >注册</a>
+
+            </p>
+        </ul>
+    </div>
+    
+    <div class="box2">
+        <a href="https://www.starbucks.com.cn/account/starbucks-rewards" target="_self">
+            <img width="100%" src="https://artwork.starbucks.com.cn/banners-homepage-banner/main_61babe13-d569-476b-8bd6-e75068943318.jpg" alt="">
+        </a>
+        <div class="kong">
+            <ul class="youshangjiao">
+                <li>
+                    <a href="https://starbucks.tmall.com/" target="_blank">
+                    <img width="100%" src="https://www-static.chinacdn.starbucks.com.cn/prod/images/pages/tmall-2020-06-29-zh.jpg" alt="">
+                </a></li>
+                <li>
+                    <a href="https://www.starbucks.com.cn/design-studio/" target="_blank">
+                    <img width="100%" src="https://www-static.chinacdn.starbucks.com.cn/prod/images/pages/starbucks-design-studio-web-china.jpg" alt="">
+                </a></li>
+                <li>
+                    <a href="https://www.starbucks.com.cn/about/careers/" target="_blank">
+                    <img width="100%" src="https://www-static.chinacdn.starbucks.com.cn/prod/images/pages/homepage-career-cn.jpg" alt="">
+                </a></li>
+            </ul>
+            <br><br><br>
+            <div class="club clearfix">
+                <p>星享俱乐部</p>
+                    <span>开启您的星享之旅，星星越多、会员等级越高、
+                        
+                        好礼越丰富。
+                        <a id="more" href="https://www.starbucks.com.cn/account/starbucks-rewards" target="_self">&nbsp;了解更多
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                    </span>
+                    <a id="zhucee" href="https://www.starbucks.com.cn/account/register/" target="_self">注册</a>
+                    <a  id="dengluu" href="starbucks.com.cn/account/#/" target="_self">登录</a>
+                    <img  width="25%" id="xingxing" src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/images/logo-msr-20210601.svg" alt="">
+            </div>
+            <div class="jingxuan clearfix">
+                <p class="xbk">星巴克精选</p>
+                <span>在星巴克天猫旗舰店发现更多咖啡心意</span>
+                <ul id="jingtu">
+                    <li class="one">
+                        <a href="https://starbucks.tmall.com/p/rd796757.htm" target="_blank">
+                            <div class="div1">
+                                <img width="65%" src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/images/homepage/tmall-card-01.png" alt="">
+                                <p class="head">会员星礼包</p>
+                                <span>
+                                    星享卡新升级
+                                    <br><br>
+                                    更多心意好礼
+                                    <p id="moree">了解更多
+                                        <i class="fas fa-angle-right"></i>
+                                    </p>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="one">
+                        <a href="https://starbucks.tmall.com/p/rd993825.htm?spm=a1z10.1-b-s.w5001-14489348230.6.MtuIoi" target="_blank">
+                            <div class="div2">
+                                <img width="65%" src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/images/homepage/tmall-card-02.png" alt="">
+                                <p class="head">星礼卡</p>
+                                <span>
+                                    用一份心礼
+                                    <br><br>
+                                    让心意相随
+                                    <p id="moree" >了解更多
+                                        <i class="fas fa-angle-right"></i>
+                                    </p>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="two">
+                        <a href="https://starbucks.tmall.com/p/rd103766.htm?spm=a1z10.1-b-s.w5001-14489348230.8.MtuIoi" target="_blank">
+                            <div class="div3">
+                                <img width="65%" src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/images/homepage/tmall-eticket.png" alt="">
+                                <p class="head">电子产品券</p>
+                                <span>
+                                    心意
+                                    <br><br>
+                                    从这一杯开始
+                                    <p id="moree">了解更多
+                                        <i class="fas fa-angle-right"></i>
+                                    </p>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="two">
+                        <a href="https://starbucks.tmall.com/category-1141443816.htm?spm=a1z10.1-b-s.w4006-14489348233.10.MtuIoi" target="_blank">
+                            <div class="div4">
+                                <img width="65%"src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/images/homepage/tmall-reserve.png" alt="">
+                                <p class="head">咖啡生活</p>
+                                <span>
+                                    星巴克
+                                    <br><br>
+                                    用心制作
+                                    <p id="moree">了解更多
+                                        <i class="fas fa-angle-right"></i>
+                                    </p>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="jiangtang">
+                <div class="h">
+                    <span>1912派克街|咖啡讲堂</span>
+                    <p>
+                        了解更多星巴克咖啡文化
+                    </p>
+                </div>
+                <ul class="jiangtangg clearfix">
+                    <li>
+                        <a href="https://www.starbucks.com.cn/coffee-blog/the-origin-of-coffee-and-its-cultivation/" target="_blank">
+                            <div class="zhishi">
+                                咖啡知识
+                            </div>
+                            <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/images/homepage/coffeehouse-coffee-cultivation-kv.jpg" alt="">
+                             <div class="bottom">
+                                 咖啡的起源于培植
+                             </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.starbucks.com.cn/coffee-blog/the-4-fundamentals/" target="_blank">
+                            <div class="zhishi">
+                                咖啡品鉴
+                            </div>
+                            <img  src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/images/homepage/coffeehouse-4-fundamentals-kv.jpg" alt="">
+                            <div class="bottom">
+                                咖啡调制
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.starbucks.com.cn/coffee-blog/roast-story/" target="_blank">
+                            <div class="zhishi">
+                                咖啡知识
+                            </div>
+                            <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/images/homepage/coffeehouse-roast-story-kv.jpg" alt="">
+                            <div class="bottom">
+                                咖啡烘培
+                            </div>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.starbucks.com.cn/coffee-blog/pour-over/" target="_blank">
+                            <div class="zhishi">
+                                咖啡品鉴
+                            </div>
+                            <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/images/homepage/coffeehouse-pour-over-kv.jpg" alt="">
+                            <div class="bottom">
+                                手冲咖啡
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <a id="end" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402000253" target="_blank"> 
+                <img id="jinghui" src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/images/icpicon.png" alt="">
+                <p>
+                    沪公网安备 31010402000253号 | 沪ICP备17003747号
+                </p>
+            </a>
+        </div>
+    </div>
+    <div class="box3">
+        <ul class="flex">
+            <li>
+                <a href="#">
+                    <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-home-active.svg" class="active">                    <div class="zhuye">主页</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-stores.svg">
+                    <div class="mendian">门店</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    
+                    <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-account.svg">
+                    <div class="zhanghu">我的账户</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-menu.svg">
+                    <div class="caidan">菜单</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-more.svg">
+                    <div class="gengduo">更多</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

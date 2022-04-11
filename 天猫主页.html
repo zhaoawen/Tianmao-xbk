@@ -1,0 +1,2261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天猫tmall.com--理想生活上天猫</title>
+    <link rel="stylesheet" href="../layout/css/all.css">
+    <link rel="stylesheet" href="../source/chongzhi.css">
+    <link rel="stylesheet" href="../code/天猫主页.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2603871_g65hbi6211.css">
+  </head>
+  <style>
+      li{
+          list-style: none;
+      }
+    *{
+    margin: 0;
+    padding: 0;
+}
+a{
+    cursor: pointer;
+}
+body{
+    font-family: "Microsoft YaHei",tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+.clearfix::before,.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+} 
+a{
+    text-decoration: none;
+    color: #000;
+}
+.top_nav{
+    font-size: 12px;
+    width: 100%;
+    background-color: #F2F2F2;
+}
+.top_center{
+    width: 1263.3px;    
+    background-color: #F2F2F2;
+    border-bottom: 1px solid  #E5E5E5;
+    line-height: 32px;
+    height: 32px;
+    margin: 0 auto ;
+}
+.left_nav li{
+    float: left;
+    margin-left: 0.5%;
+    margin-right: 1.5%;
+}
+.right_nav li{
+    float: right;
+    margin-left: 1.5%;
+}
+.c3{
+    margin-right: 3.6%;
+}
+.right_nav .line{
+    color: #999;
+    width: 1px;
+}
+.top_nav a,
+.top_nav{
+    color: #999;
+}
+.c1,
+.c3{
+    position: relative;
+}
+.c1::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border: 3px solid transparent;
+    border-bottom:none;
+    border-top-color: #999;
+    bottom: 40%;
+    left:105%;
+    right: 0;
+    margin:auto;
+    transition: all .2s;
+}
+/* 鼠标经过div 里面的三角旋转 ：原来是45，现在要旋转180，所以总的度数是两者之和” */
+.c1:hover::after {
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+.c3::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    border: 3px solid transparent;
+    border-bottom:none;
+    border-top-color: #999;
+    top: 16px;
+    left:79px;
+    right: 0;
+    transition: all .2s;
+}
+.c3:hover::after {
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+.icon-bars,
+.fa-mobile,
+.fa-shopping-cart{
+    font-weight: bold;
+    color: #ff0036;
+}
+.left_nav li a:hover{
+    color: #ff0036;
+}
+.zhibianse a:hover{
+    color: #ff0036;
+}
+.c2 a:hover{
+    color: #ff0036;
+    text-decoration: underline;
+}
+
+.top_head{
+    width: 100%;
+    height: 130px;
+    background-color: white;
+}
+.header{
+    width: 1263.3px;
+    margin: 0 auto ;
+    position: relative;
+}
+.header img{
+    margin-left: -2%;
+}
+.sousuo{
+    border: 2px solid red;
+    width: 600px;
+    position: relative;
+}
+.sousuo{
+    width: 623px;
+    height: 39px;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+}
+.top_search{
+    width: 492px;
+    height: 39px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: transparent;
+    outline: none;
+    text-indent: 10px;
+}
+.search{
+    width: 131px;
+    height: 39px;
+    position: absolute;
+    top: 0;
+    left: 79%;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: red;
+    border: 1px solid red;
+}
+.top_fenlei{
+    width: 100%;
+    height: 36px;
+    font-style: 16px;
+    background-color: white;
+    border-bottom: 1.5px solid #FF0036;
+}
+.fenlei{
+    width: 1263.3px;
+    margin: 0 auto ;
+    height: 36px;
+    position: relative;
+}
+.right_fenlei li{
+    float: left;
+    height: 36px;
+    line-height: 35px;
+    margin-left: 1.2%;
+    color: white;
+}
+.right_fenlei .icon-bars{
+    color: white;
+    margin-left: 11%;
+    margin-right: 5%;
+}
+.right_fenlei li:nth-child(1){
+    width: 200px;
+    height: 37px;
+    margin-left: 0.2%;
+    font-size: 16px;
+    background-color: #FF0036;
+    font-weight: bold;
+}
+.right_fenlei li img{
+    width:100px;
+    height: 30px;
+    margin-top: 3px;
+}
+.left_fenlei{
+    z-index: 9;
+
+}
+.right_fenlei li a:hover{
+    color: #ff0036 ;
+}
+.left_fenlei li{
+    font-size: 16px;
+    line-height: 31.5px;
+}
+.center{
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+.main{
+    width: 1263.3px;
+    margin: 0 auto;
+    position: relative;
+    height: 500px;
+}
+.left_fenlei span{
+    margin-left: 0.5%;
+    height: 31.5px;
+    line-height: 31.5px;
+    font-size: 16px;
+    color: #fff;
+}
+#nvzhuang{
+    font-size:16px;
+}
+.left_fenlei{
+    position: relative;
+    /* opacity: 0.9; */
+}
+.left >li{
+    width: 200px;
+    height: 31.2px;
+    font-size: 14px;
+    margin-left: 2.5px;
+    background-color: rgb(51, 49, 49);
+    text-indent: 1em;
+    color: white;
+}
+.left_fenlei a{
+    color: white;
+}
+.pink:hover,
+.pink:hover a,
+.pink:hover span
+{
+    background-color:white ;
+    color: #EA6B96;
+    font-weight: bold;
+}
+.blue:hover,
+.blue:hover a,
+.blue:hover span{
+    background-color:white ;
+    color: rgb(38, 97, 224);
+    font-weight: bold;
+}
+.purple:hover,
+.purple:hover a,
+.purple:hover span{
+    background-color:white ;
+    color: blueviolet;
+    font-weight: bold;
+}
+.orange:hover,
+.orange:hover a,
+.orange:hover span{
+    background-color:white ;
+    color: orange;
+    font-weight: bold;
+}
+.green:hover,
+.green:hover a,
+.green:hover span{
+    background-color:white ;
+    color: #41C8B3;
+    font-weight: bold;
+}
+.red:hover,
+.red:hover a,
+.red:hover span{
+    background-color:white ;
+    color: #DE3233;
+    font-weight: bold;
+}
+.tu{
+    width: 100%;
+}
+.tu img{
+    width: 100%;
+    height: 499.2px;
+    float: left;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.li1{
+    animation: li1 15s infinite ;
+}
+.li2{
+    animation: li2 15s infinite;
+}
+.li3{
+    animation: li3 15s infinite;
+}
+.li4{
+    animation: li4 15s infinite;
+}
+.li5{
+    animation: li5 15s infinite;
+}
+.li6{
+    animation: li6 15s infinite;
+}
+@keyframes li1{
+    0%, 5.7% {
+        opacity: 1;
+    }
+    15.7%, 100% {
+        opacity: 0;
+    }
+}
+@keyframes li2 {
+    0%, 21.4% {
+        opacity: 1;
+    }
+
+    31.4%, 100% {
+        opacity: 0;
+    }
+}
+@keyframes li3 {
+    0%, 37.1% {
+        opacity: 1;
+    }
+
+    47.1%, 100% {
+        opacity: 0;
+    }
+}
+
+@keyframes li4 {
+    0%, 52.8% {
+        opacity: 1;
+    }
+
+    62.8%,100% {
+        opacity: 0;
+    }
+}
+@keyframes li5 {
+    0%, 68.5% {
+        opacity: 1;
+    }
+
+    78.5%,100% {
+        opacity: 0;
+    }
+}
+@keyframes li6{
+    0%, 84.2% {
+        opacity: 1;
+    }
+
+    94.2%,100% {
+        opacity: 0;
+    }
+}
+.beijing div{
+    width: 100%;
+    height: 500px;
+    /* background-color: red; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.li1{
+    background-color: #3C36D4;
+}
+.li2{
+    background-color: #E8E8E8;
+}
+.li3{
+    background-color: #76BDDD;
+}
+.li4{
+    background-color: #E8E8E8;
+}
+.li5{
+    background-color: #F6712C;
+}
+.li6{
+    background-color: #718CF5;
+}
+#end{
+    background-color: #3C36D4;
+}
+.top_center{
+    position: relative;
+}
+.xiala{
+    width: 1178px;
+    height: 160px;
+    display: none;
+    background-color: white;
+    border: 1px solid #e2e2e4;
+    border-top: none;
+    position: absolute;
+    margin: 0 auto;
+    top: 32px;
+    right: -1px;
+    box-shadow: 0 2px 2px rgba(0, 0,0, .2);
+    z-index: 999;
+}
+.xiala div{
+   float: left;
+   margin: 0 auto;
+   position: relative;
+   z-index: 3;
+}
+.xian{
+    width:1.5px;
+    height: 100%;
+    background: linear-gradient(to bottom,white,hsl(240, 12%, 97%),white)
+}
+.part1{
+    background-color: white;
+    width: 45%;
+    height: 100%;
+}
+.part2{
+    background-color: white;
+    width: 37%;
+    height: 100%;
+}
+.part3{
+    background-color: white;
+    width: 17%;
+    height: 100%;
+}
+.title1,
+.title2,
+.title3{
+    padding-top: 20px;
+    padding-left: 30px;
+    font-size: 16px;
+    font-weight: lighter;
+}
+.title1{
+    color: #f56a00;
+}
+.title2{
+    color: #2263d4;
+}
+.title3{
+    color: #666;
+}
+.part1 li a:hover{
+    color: #f56a00;
+}
+.part2 li a:hover{
+    color: #2263d4;
+}
+.part3 li a:hover{
+    color: #666;
+}
+.hot li,
+.market li,
+.help li{
+    float: left;
+    margin-right: 0;
+}
+.hot li{
+    width: 95px;
+}
+.market li{
+    width: 80px;
+}
+.help li{
+    width: 85px;
+}
+.hot a,
+.market a,
+.help a{
+    margin-left: 24px;
+    color: #666;
+}
+.hot a:hover,
+.market a:hover,
+.help a:hover{
+    text-decoration: underline;
+    color: #666;
+    cursor: pointer;
+}
+.c3:hover{
+    background-color: white;
+    border:1px solid #e2e2e4;
+    border-bottom: none;
+}
+.c3{
+    width: 78px;
+    padding: 0 10px;
+    position:relative;
+    border: 1px solid transparent;
+    border-bottom: none;
+    z-index: 9999;
+}
+.c3:hover .xiala{
+        background-color: white;
+        border: 1px solid #e2e2e4;
+        border-bottom: 1px;
+        border-bottom:none ;
+        border-top:transparent;
+        display: block;
+}
+.xiala:hover + .c3{
+    background-color: white;
+    border:1px solid #e2e2e4;
+    border-bottom: none;
+}
+.left{
+    position: relative;
+}
+.cela{
+    display: none;
+    width: 830px;
+    height:500px;
+    background-color: white;
+    border: 1px solid #e2e2e4;
+    border-top: none;
+    position: absolute;
+    margin: 0 auto;
+    top: 0px;
+    left: 200px;
+    box-shadow: 0 2px 2px rgba(0, 0,0, .2);
+}
+.cela div{
+    width: 800px;
+    height: 40px;
+    border-bottom:1px dashed rgb(192, 189, 189);
+    padding-bottom: 10px;
+    padding-top: 14.5px;
+}
+.cela div li{
+    float: left;
+    line-height: 12px;
+    font: 15px/1.5 tahoma,arial,"\5b8b\4f53";
+}
+.left li:nth-child(1):hover  .cela{
+    display: block;
+}
+.cela{
+    font: 15px/1.5 tahoma,arial,"\5b8b\4f53";
+    color: black;
+}
+.cela span{
+    font-size: 10px;
+    position: relative;
+    top: -26px;
+    left: 73px;
+}
+.title88 span,.title77 span,.title66 span,.title55 span ,.title44 span ,.title33 span,.title22 span ,.title11 span{
+    padding-left: 5px;
+}
+.title88,.title77,.title66,.title55,.title44,.title33,.title22,.title11{
+    padding-top: 0px;
+    padding-left: 7px;
+    padding-right: 10px;
+    font-weight: bolder!important;
+}
+.title66,.title88{
+    height: 10px;
+}
+.cela div:last-child{
+    border-bottom: none;
+    height: 10px;
+}
+.cela a{
+    cursor: pointer;
+}
+.logo_head{
+    width: 100%;
+    height: 327px;
+    padding-top: 50px;
+    background-color: #F5F5F5;
+    padding-bottom: 50px;
+}
+.logo{
+    padding-left: 2px;
+    width: 1261.3px;
+    margin: 0 auto ;
+    position: relative;
+    background-color: white;
+}
+.logo li img{
+    width: 82%;
+    height: 50px;
+    vertical-align: middle;
+}
+.logo li{
+    text-align: center;
+    line-height: 108px;
+    width: 122px;
+    background-color: #fff;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    float: left;
+    position: relative;
+}
+.brand-mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(0,0,0,.8);
+    transition: all  0.3s ease-out;
+    opacity: 0;
+}
+.coupon{
+    color: #fff;
+    text-align: center;
+    line-height:90px;
+    height: 60px;
+    font-size: 12px;
+    padding: 0 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* 文字溢出时省略号 */
+    white-space: nowrap;
+}
+li:hover .enter span{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    width: 63px;
+    height: 18px;
+    font-size: 12px;
+    line-height: 15px;
+    background-color: rgb(255, 0, 54);
+    border-radius: 8px;
+}
+li:hover .brand-mask{
+    opacity: 1;
+}
+.enter{
+    margin-top: -45px;
+    text-align: center;
+    height: 32px;
+}
+.huanyipi span{
+    top: -5px;
+    position: relative;
+}
+.huanyipi p{
+    height: 5px;
+    font-size: 14px;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    color: rgb(187, 176, 176);
+}
+.huanyipi:hover{
+    background-color: #FF0036;
+}
+.huanyipi{
+    transition: all  0.5s ease-out;
+    height: 108px;
+}
+.chaoshi_head{
+
+    width: 100%;
+    height: 700px;
+    background-color:#F5F5F5 ;
+}
+.chaoshi{
+    padding-left: 2px;
+    width: 1262.3px;
+    margin: 0 auto ;
+    position: relative;
+    background-color: #F5F5F5;
+}
+.chaoshi #t{
+    width: 214px;
+    height: 25px;
+    margin-bottom: 10px;
+}
+.xia{
+    float: left;
+}
+.chaoshi a{
+    float: left;
+
+}
+.xia{
+    position: relative;
+    width: 484px;
+    height: 301px;
+    margin-left: 13px;
+    background-color: white;
+}
+.fanzhuang{
+    width: 250px;
+    height: 57px;
+    background-color: #00B262;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+}
+.xia .item-img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 80px;
+    left: 250px;
+}
+.xia a{
+    display: block;
+    width: 468px;
+    height: 283px;
+    margin: 10px ;
+    box-shadow:0 0 10px 1px rgb(212, 206, 206);    
+    background-color:  #F5F5F5;
+    opacity: 1;
+    transition: all  0.5s ease-out;
+}
+.white{
+    width: 464px;
+    height: 223px;
+    background-color: white;
+
+}
+.right-detail{
+    position: absolute;
+    top: 153px;
+    height: 87px;
+    width: 291px;
+    background-repeat: no-repeat;
+    background-image: url(https://img.alicdn.com/tfs/TB1AnTXewMPMeJjy1XcXXXpppXa-290-87.png);
+    z-index: 99;
+}
+.baoyou{
+    font-size: 24px;
+    color: #00B262;
+    font-weight: bolder;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+.baoyou span{
+    display: block;
+    margin-top: -28px;
+    margin-left: 30px;
+}
+.dijia{
+    color: #000;
+    font-weight: lighter;
+    font-size: 20px;
+    margin: 8px auto;
+}
+.inner{
+    float: left;
+}
+.five img,.six img,
+.one img,.two img,.three img,.four img{
+    width: 185px;
+    height: 185px;
+    margin: 18px 25px;
+}
+.five,.six,
+.one ,.two ,.three ,.four{
+    display: block;
+    width:237px ;
+    height: 300px;
+    background-color: white;
+    margin-left: 12px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    opacity: 1;
+    transition: all  0.3s ease-out;
+
+}
+.item-title{
+    width: 135px;
+    height: 40px;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    overflow: hidden;
+    margin: 0px auto ;
+    margin-top: -10px;
+}
+.price{
+    margin-left: 85px;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #FF0036;
+    line-height: 18px;
+}
+.five:hover,.six:hover,
+.one:hover ,.two:hover ,.three:hover ,.four:hover{
+        border: 1px solid red;
+        opacity: 0.8;
+        display: block;
+}
+.xia:hover{
+    opacity: 0.8;
+}
+.banner-detail{
+    width: 200px;
+    height: 60px;
+    background-color: #353533;
+    position: absolute;
+    top: 420px;
+    left: 0;
+}
+.left_shangpin{
+    position: relative;
+    opacity: 1;
+    transition: all  0.3s ease-out;
+}
+.left-left{
+    color: white;
+    display: inline-block;
+    width:36px;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 18px;
+    line-height: 24px;
+    height: 55px;
+    background-color: #0F0900;
+}
+.left-right{
+    float: right;
+    color: white;
+    margin-right: 30px;
+    font-size: 18px;
+    margin-top: 5px;
+    line-height: 24px;
+}
+.detail-end img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 575px;
+    left: 195px;
+}
+.left_shangpin:hover{
+    opacity: 0.8;
+}
+.end-head{
+    width: 100%;
+    background-color: white;
+}
+.end{
+    width: 1263.3px;
+    margin: 0 auto;
+    position: relative;
+    background-color: white;
+    border-bottom: 2px solid #FF0036;
+}
+#first img{
+    display: block;
+    width: 250px;
+    margin-left: 50px;
+}
+#second img{
+    display: block;
+    width: 280px;
+}
+#third img{
+    display: block;
+    width: 280px;
+}
+#forth img{
+    display: block;
+    width: 210px;
+}
+.end > a{
+    margin-top: 50px;
+    float: left;
+    margin-right:40px; ;
+}
+.jiange{
+    float: left;
+    width: 100%;
+    height: 1px;
+    margin-top: 50px;
+    background-color: #EDEDED;
+}
+.end-center ul{
+    float: left;
+    /* background-color: violet; */
+    /* border: 1px solid black; */
+    margin-right: 122px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.end-center li{
+    width: 120px;
+    line-height:20px;
+    height: 20px;
+    font-size: 12px;
+}
+.end-center li a{
+    color: #8b8b88;
+}
+.zhinan{
+    margin-left: 50px;
+}
+.end-center #title{
+    line-height: 25px;
+    height: 25px;
+    font-size: 16px;
+    color: #646464;
+    font-weight: bolder;
+}
+.tianmao img{
+    width: 100px;
+    height: 100px;
+}
+#mao{
+    position: absolute;
+    top: 390px;
+    left: 50px;
+    width: 80px;
+}
+.footer-head{
+    width: 100%;
+    background-color: white;
+}
+.footer{
+
+    width: 1209.3px;
+    margin: 0 auto;
+    position: relative;
+    background-color: black;
+    color: white;
+    font-size:12px;
+    padding-left: 50px;
+}
+.footer a{
+    color: white;
+}
+.c11 a,.c22 a{
+    color: white;
+}
+.c11 a{
+    margin-right: 0.3%;
+}
+.c22 a{
+    margin-right: 1%;
+}
+.c22 span{
+    margin-left: -10px;
+    margin-right: 2px;
+}
+.c44 a{
+    margin-top: 1.5%;
+    color: #a4a4a4;
+}
+.c33 a,
+.c33 span{
+    margin-right: 6%;
+}
+.c33 a{
+    color: #a4a4a4;
+}
+.c11,.c22{
+    padding-top:1.5%;
+}
+.c33 span{
+    color: #a4a4a4;
+}
+.c33{
+    margin-top: 1.5%;
+}
+.c44 span{
+    margin-right: 5%;
+    
+    color: #a4a4a4;
+}
+.c55,.c66{
+    color: #a4a4a4;
+}
+.c55,.c66,.c77{
+    margin-top: 1%;
+}
+.c66 span{
+    margin-right: 5%;
+}
+.c77{
+    color: #666;
+}
+#ll {
+    height: 30px;
+
+}
+.c88{
+    margin-top: 10px ;
+    padding-bottom: 10px;
+}
+.chaoshi_head{
+    border-bottom: 1px solid #999;
+}
+.zuobian li{
+    width: 36px;
+    height: 36px;
+    font-size: 12px;
+    border: 1px solid transparent;
+    margin-bottom: 1.5px;
+    
+}
+.zuobian div{
+    width: 28px;
+    height: 28px;
+    margin: 6px 6px;
+}
+#nav{
+    margin-top: 12px;
+}
+.lala{
+    display: none;
+}#bottom{
+    margin-top: 5px;
+}
+.icon-jiantouxiangshang{
+    margin-left: 2px;
+}
+.zuobian{
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    z-index: 9999;
+    width: 36px;
+    text-align: center;
+    margin-left: -675px!important;
+}
+.zuobian a{
+    color: white;
+}
+.a1{
+    background-color: #FF0036;
+}
+.a3{
+    background-color: #64c333;
+}
+.a2{
+    background-color: #666;
+}
+.a4{
+    background-color: #999;
+}
+#shoujitianmao:hover{
+    cursor: pointer;
+}
+@media (min-width: 1400px) and (max-width:9999px) {
+    .lala{
+        display: block;
+    }
+}
+
+  </style>
+<!-- 放大后横向不出现滚动条 -->
+<body style="overflow:-Scroll;overflow-x:hidden">
+    <div class="top_nav">
+        <div class="top_center">
+            <ul class="left_nav">
+                <li>喵，欢迎来天猫</li>
+                <li><a href="../大一下/天猫登录.html">请登录</a></li>
+                <li><a href="#">免费注册</a></li>
+            </ul>
+            <ul class="right_nav">
+                <li class="c3"><a href="#"><span class="iconfont icon-bars"></span> 网站导航</a>
+                <div class="xiala">
+                    <div class="part1">
+                        <h2 class="title1">
+                            热点推荐 Hot
+                        </h2>
+                        <ul class="hot">
+                            <li><a>天猫超市</a></li>
+                            <li><a>喵鲜生</a></li>
+                            <li><a>科技新品</a></li>
+                            <li><a>女装新品</a></li>
+                            <li><a>酷玩街</a></li>
+                            <br>
+                            <li><a>内衣新品</a></li>
+                            <li><a>试美妆</a></li>
+                            <li><a>运动新品</a></li>
+                            <li><a>时尚先生</a></li>
+                            <li><a>精明妈咪</a></li>
+                            <br>
+                            <li><a>吃乐会</a></li>
+                            <li><a>企业采购</a></li>
+                            <li><a>会员积分</a></li>
+                            <li><a>天猫国际</a></li>
+                            <li><a>品质频道</a></li>
+                        </ul>
+                    </div>
+                    <div class="xian"></div>
+                    <div class="part2">
+                        <h2 class="title2">
+                            行业市场 Market
+                        </h2>
+                        <ul class="market">
+                                <li><a>美妆</a></li>
+                                <li><a>电器</a></li>
+                                <li><a>女装</a></li>
+                                <li><a>男装</a></li>
+                                <li><a>女鞋</a></li>
+                                <br>
+                                <li><a>男鞋</a></li>
+                                <li><a>内衣</a></li>
+                                <li><a>箱包</a></li>
+                                <li><a>运动</a></li>
+                                <li><a>母婴</a></li>
+                                <br>
+                                <li><a>家装</a></li>
+                                <li><a>医药</a></li>
+                                <li><a>食品</a></li>
+                                <li><a>配饰</a></li>
+                                <li><a>汽车</a></li>
+                        </ul>
+                    </div>
+                    <div class="xian"></div>
+                    <div class="part3">
+                        <h2 class="title3">
+                            服务指南 Help
+                        </h2>
+                        <ul class="help">
+                                <li><a>帮助中心</a></li>
+                                <li><a>品质保障</a></li>
+                                <br>
+                                <li><a>特色服务</a></li>
+                                <li><a>7天退换货</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                </li>
+               
+                
+                <li class="c1 c2"><a href="#">商家支持</a></li>
+                <li class="zhibianse"><a href="#">淘宝网</a></li>
+                <li class="zhibianse"><a href="#">
+                    <i class="fas fa-mobile"></i> 手机版</a></li>
+                <li class="line">|</li>
+                <li class="c1 c2"><a href="#">收藏夹</a></li>
+                <li class="zhibianse">
+                    <a href="../大一下/我的购物车.html">
+                    <i class="fas fa-shopping-cart"></i> 购物车</a></li>
+                <li class="c1 c2"><a href="../大一下/已买到的宝贝.html">我的淘宝</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="top_head ">
+        <div class="header w clearfix">
+            <img width="240px" height="130px" src="https://img.alicdn.com/tfs/TB1MaLKRXXXXXaWXFXXXXXXXXXX-480-260.png" alt="">
+            <div class="sousuo">
+                <input type="text" class="top_search" placeholder=" 搜索 天猫 商品 / 品牌 / 店铺" aria-label="请输入搜索文字">
+                <button class="search">搜索</button>
+            </div>
+        </div>
+    </div>
+    <div class="top_fenlei">
+            <div class="fenlei">
+                <ul class="right_fenlei clearfix">
+                        <li><span class="iconfont icon-bars"></span>商品分类</li>
+                        <li><a href="#"><img alt="" src="//img.alicdn.com/tfs/TB1ztBlaMMPMeJjy1XbXXcwxVXa-200-60.png"></a></li>
+                        <li><a href="#"><img alt="" src="//img.alicdn.com/tfs/TB1t5ObaBxRMKJjy0FdXXaifFXa-200-60.png"></a></li>
+                        <li><a href="#">天猫会员</a></li>
+                        <li><a href="#">电器城</a></li>
+                        <li><a href="#">喵鲜生</a></li>
+                        <li><a href="#">医药馆</a></li>
+                        <li><a href="#">魅力惠</a></li>
+                        <li><a href="#">飞猪旅行</a></li>
+                        <li><a href="#">苏宁易购</a></li>
+                        <li><a href="#">天猫内容</a></li>
+                </ul>
+            </div>
+    </div>
+    <div class="center">
+        <div class="main">
+            <ul class="left">
+                <li class="left_fenlei pink">
+                    <span id="nvzhuang" class="iconfont icon-lianyiqunqunzibaizhequn"></span>
+                    &nbsp;
+                    <a href="#">女装</a> /<a href="#">内衣</a>
+                
+                <div class="cela">
+                        <div class="part11">
+                        
+                            <ul class="liuxing">
+                                <li class="title11">当季流行 <span style="color: black;" class="iconfont icon-jiantou"></span>
+                                </li>
+                                <li><a   style="color: #EA6B96;  font-weight: lighter;">女装新品</a></li>
+                                <li><a  style="color: black; font-weight: lighter;">商场同款</a></li>
+                                <li><a  style="color: #EA6B96; font-weight: lighter;">仙女连衣裙</a></li>
+                                <li><a  style="color: black; font-weight: lighter;">T恤</a></li>
+                                <li><a  style="color: black; font-weight: lighter;">衬衫</a></li>
+                                <li><a  style="color: black; font-weight: lighter;">时髦外套</a></li>
+                                <li><a  style="color: black; font-weight: lighter;">休闲裤</a></li>
+                                <li><a  style="color: black; font-weight: lighter;">牛仔裤</a></li>
+                                <br>
+                                <li  class="blank"><a  style="color: #EA6B96; font-weight: lighter;">无痕文胸</a></li>
+                                <li><a  style="color: black; font-weight: lighter;">运动文胸</a></li>
+                                <li><a  style="color:#EA6B96; font-weight: lighter;">潮流家居服</a></li>
+                                <li><a  style="color: black; font-weight: lighter;">百搭船袜</a></li>
+                            </ul>
+                        </div>
+                        <p class="xuxian"></p>
+                        <div class="part22">
+                            
+                            <ul class="shangzhuang">
+                                    <li class="title22">精选上装<span style="color: black;" class="iconfont icon-jiantou"></span></li>
+                                    <li><a  style="color: #EA6B96; font-weight: lighter;">毛呢外套</a></li>
+                                    <li><a  style="color: #EA6B96; font-weight: lighter;">羽绒服</a></li>
+                                    <li><a  style="color: #EA6B96; font-weight: lighter;">棉服</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">丝绒卫衣</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">毛针织衫</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">皮毛一体</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">皮草</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">毛衣</a></li>
+                                    <br>
+                                    <li class="blank"><a  style="color: black; font-weight: lighter;">衬衫</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">卫衣</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">针织衫</a></li>
+                                    <li><a  style="color: #EA6B96; font-weight: lighter;">T恤</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">短外套</a></li>
+                                    <li><a  style="color: #EA6B96; font-weight: lighter;">小西装</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">风衣</a></li>
+                            </ul>
+                        </div>
+                        <p class="xuxian"></p>
+                        <div class="part33">
+                            
+                            <ul class="qunzhuang">
+                                    <li class="title33">浪漫裙装<span style="color: black;" class="iconfont icon-jiantou"></span></li>
+                                    <li><a  style="color: #EA6B96; font-weight: lighter;">连衣裙</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">半身裙</a></li>
+                                    <li><a  style="color: #EA6B96; font-weight: lighter;">A字裙</a></li>
+                                    <li><a  style="color: #EA6B96; font-weight: lighter;">荷叶边裙</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">大摆裙</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">包臀裙</a></li>
+                                    <li><a  style="color: #EA6B96; font-weight: lighter;">百褶裙</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">长袖连衣裙</a></li>
+                                    <br>
+                                    <li class="blank"><a  style="color: black; font-weight: lighter;">棉麻连衣裙</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">牛仔裙</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">蕾丝连衣裙</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">真丝连衣裙</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">印花连衣裙</a></li>
+                                   
+                            </ul>
+                        </div>
+                        <p class="xuxian"></p>
+                        <div class="part44">
+                            
+                            <ul class="xiazhuang">
+                                    <li class="title44">女士下装<span style="color: black;" class="iconfont icon-jiantou"></span></li>
+                                    <li><a  style="color: #EA6B96; font-weight: lighter;">休闲裤</a></li>
+                                    <li><a  style="color: #EA6B96; font-weight: lighter;">阔腿裤</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">牛仔裤</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">打底裤</a></li>
+                                    <li><a  style="color: #EA6B96; font-weight: lighter;">开叉运动裤</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">哈伦裤</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">背带裤</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">小脚裤</a></li>
+                                    <br>
+                                    <li class="blank"><a  style="color: black; font-weight: lighter;">西装裤</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">短裤</a></li>
+                            </ul>
+                        </div>
+                        <p class="xuxian"></p>
+                        <div class="part55">
+                            
+                            <ul class="tese">
+                                    <li class="title55">特色女装<span style="color: black;" class="iconfont icon-jiantou"></span></li>
+                                    <li><a  style="color: #EA6B96; font-weight: lighter;">时尚套装</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">休闲套装</a></li>
+                                    <li><a  style="color: #EA6B96; font-weight: lighter;">日系女装</a></li>
+                                    <li><a  style="color: #EA6B96; font-weight: lighter;">精选妈妈装</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">大码女装</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">职业套装</a></li>
+                                    <br>
+                                    <li class="blank"><a  style="color: black; font-weight: lighter;">优雅旗袍</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">精致礼服</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">婚纱</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">唐装</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">小码女装</a></li>
+                            </ul>
+                        </div>
+                        <p class="xuxian"></p>
+                        <div class="part66" style="height: 30px; width: 800px;">
+                            <ul class="wenxiong">
+                                    <li class="title66">文胸塑身<span style="color: black;" class="iconfont icon-jiantou"></span></li>
+                                    <li><a  style="color: black; font-weight: lighter;">光面文胸</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">运动文胸</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">美背文胸</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">聚拢文胸</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">大杯文胸</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">轻薄塑身</a></li>
+                            </ul>
+                        </div>
+                        <p class="xuxian"></p>
+                        <div class="part77">
+                            <ul class="jiajufu">
+                                    <li class="title77">家 居 服<span style="color: black;" class="iconfont icon-jiantou"></span></li>
+                                    <li><a  style="color: black; font-weight: lighter;">春夏家居服</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">纯棉家居服</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">莫代尔家居服</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">真丝家居服</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">春夏睡裙</a></li>
+                                    <br>
+                                    <li class="blank"><a  style="color: black; font-weight: lighter;">男士家居服</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">情侣家居服</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">性感睡裙</a></li>
+                            </ul>
+                        </div>
+                        <p class="xuxian"></p>
+                        <div class="part88">
+                            
+                            <ul class="beixin">
+                                    <li class="title88">内裤背心<span style="color: black;" class="iconfont icon-jiantou"></span></li>
+                                    <li><a  style="color: black; font-weight: lighter;">男士内裤</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">女式内裤</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">男士内裤多条装</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">女士内裤多条装</a></li>
+                                    <li><a  style="color: black; font-weight: lighter;">莫代尔内裤</a></li>
+                            </ul>
+                        </div>
+                
+                </div>
+                </li>
+                <li class="left_fenlei blue">
+                    <span class="iconfont icon-nanzhuang"></span>
+                    &nbsp;
+                    <a href="#">男装</a> /<a href="#">运动户外</a></li>
+                <li class="left_fenlei purple">
+                    <span class="iconfont icon-xie"></span>
+                    &nbsp;
+                    <a href="#">女鞋</a> /<a href="#">男鞋</a> /<a href="#">箱包</a></li>
+                <li class="left_fenlei pink">
+                    <span class="iconfont icon-meizhuang"></span>
+                    &nbsp;
+                    <a href="#">美妆</a> /<a href="#">个人护理</a></li>
+                <li class="left_fenlei purple">
+                    <span class="iconfont icon-zhubaoshipin"></span>
+                    &nbsp;
+                    <a href="#">腕表</a> /<a href="#">眼镜</a> /<a href="#">珠宝饰品</a></li>
+                <li class="left_fenlei blue">
+                    <span class="iconfont icon-shouji"></span>
+                    &nbsp;
+                    <a href="#">手机</a> /<a href="#">数码</a> /<a href="#">电脑办公</a></li>
+                <li class="left_fenlei pink">
+                    <span class="iconfont icon-muyingwanju"></span>
+                    &nbsp;
+                    <a href="#">母婴玩具</a> </li>
+                <li class="left_fenlei orange">
+                    <span class="iconfont icon-shipin"></span>
+                    &nbsp;
+                    <a href="#">零食</a> /<a href="#">茶酒</a> /<a href="#">进口食品</a></li>
+                <li class="left_fenlei orange">
+                    <span class="iconfont icon-yingtao"></span>
+                    &nbsp;
+                    <a href="#">生鲜水果</a> </li>
+                <li class="left_fenlei blue">
+                    <span class="iconfont icon-jiayongdianqi"></span>
+                    &nbsp;
+                    <a href="#">大家电</a> /<a href="#">生活电器</a></li>
+                <li class="left_fenlei red">
+                    <span class="iconfont icon-items"></span>
+                    &nbsp;
+                    <a href="#">家居建材</a> </li>
+                <li class="left_fenlei blue">
+                    <span class="iconfont icon-qiche"></span>
+                    &nbsp;
+                    <a href="#">汽车</a> /<a href="#">配件</a> /<a href="#">用品</a></li>
+                <li class="left_fenlei orange">
+                    <span class="iconfont icon-jiafangjiashi"></span>
+                    &nbsp;
+                    <a href="#">家纺</a> /<a href="#">家饰</a> /<a href="#">鲜花</a></li>
+                <li class="left_fenlei green">
+                    <span class="iconfont icon-yiyaobaojian"></span>
+                    &nbsp;
+                    <a href="#">医药保健</a> </li>
+                <li class="left_fenlei red">
+                    <span class="iconfont icon-guo1"></span>
+                    &nbsp;
+                    <a href="#">厨具</a> /<a href="#">收纳</a> /<a href="#">宠物</a></li>
+                <li class="left_fenlei green">
+                    <span class="iconfont icon-tushuyinxiang"></span>
+                    &nbsp;
+                    <a href="#">图书音像</a> 
+            </ul>
+            <div class="tu">
+                <div id="end">
+                    <a href="#">
+                        <img src="https://img.alicdn.com/imgextra/i4/O1CN01ormPeR1ImjOvH1EI1_!!6000000000936-2-tps-1130-500.png_q100.jpg_.webp" alt="">
+                    </a>
+                </div>
+                <div class="li6">
+                    <a href="#">
+                        <img src="//img.alicdn.com/tfs/TB1_1OLxQL0gK0jSZFtXXXQCXXa-1130-500.jpg_q100.jpg_.webp" alt="">
+                    </a>
+                </div>
+                <div class="li5">
+                    <a href="#">
+                        <img src="//img.alicdn.com/imgextra/i3/O1CN01Am8Sra21Zaice06ax_!!6000000006999-2-tps-1130-500.png_q100.jpg_.webp" alt="">
+                    </a>
+                </div>
+                 <div class="li4">
+                    <a href="#">
+                        <img src="https://aecpm.alicdn.com/simba/img/TB1_JXrLVXXXXbZXVXXSutbFXXX.jpg" alt="">
+                    </a>
+                </div>
+                <div class="li3">
+                    <a href="#">
+                        <img src="https://img.alicdn.com/imgextra/i4/6000000001259/O1CN013wGdoW1LAfKMEec72_!!6000000001259-0-octopus.jpg" alt="">
+                    </a>
+                </div>
+                <div class="li2">
+                    <a href="#">
+                        <img src="https://aecpm.alicdn.com/simba/img/TB1W4nPJFXXXXbSXpXXSutbFXXX.jpg" alt="">
+                    </a>
+                </div>
+                <div class="li1">
+                    <a href="#">
+                        <img src="https://img.alicdn.com/imgextra/i4/O1CN01ormPeR1ImjOvH1EI1_!!6000000000936-2-tps-1130-500.png_q100.jpg_.webp" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="beijing">
+            <div id="end"></div>
+            <div class="li6"></div>
+            <div class="li5"></div>
+            <div class="li4"></div>
+            <div class="li3"></div>
+            <div class="li2"></div>
+            <div class="li1"></div>
+            </div>
+        </div>
+    </div>
+    <div class="logo_head">
+        <div class="logo">
+            <ul>
+                <li>
+                    <img src="//img.alicdn.com/i2/2/T1SG6cXm8kXXb1upjX.jpg_150x150q100.jpg_.webp" alt="">
+                    <a class="brand-mask" href="#">
+                        <div class="coupon">
+                            <span>优惠券 ￥40</span>
+                        </div>
+                        <div class="enter">
+                          <span>点击进入</span>
+                        </div>
+                      </a>
+                </li>
+                <li>
+                    <img src="//img.alicdn.com/i2/2/TB1ilbUHpXXXXb8XXXXSutbFXXX.jpg_150x150q100.jpg_.webp" alt="">
+                    <a class="brand-mask" href="#">
+                        <div class="coupon">
+                            <span >Schneider Electric/施耐德</span>
+                        </div>
+                        <div class="enter">
+                          <span>点击进入</span>
+                        </div>
+                      </a>
+                </li>
+                <li>
+                    <img src="//img.alicdn.com/i2/2/TB1pRaOIFXXXXXmXpXXSutbFXXX.jpg_150x150q100.jpg_.webp">
+                    <a class="brand-mask" href="#">
+                      <div class="coupon">
+                          <span>Siwy</span>
+                      </div>
+                      <div class="enter">
+                        <span>点击进入</span>
+                      </div>
+                    </a>
+                </li>
+                <li>
+                    <img src="//img.alicdn.com/i2/2/TB1gD8NhDlYBeNjSszcXXbwhFXa?abtest=&amp;pos=4&amp;abbucket=&amp;acm=09042.1003.1.1200415&amp;scm=1007.13029.131809.100200300000000_150x150q100.jpg_.webp">
+                    <a class="brand-mask" href="#">
+                      <div class="coupon">
+                          <span>Catalo/家得路</span>
+                      </div>
+                      <div class="enter">
+                        <span>点击进入</span>
+                      </div>
+                    </a>
+                </li>
+                <li>
+                    <img src="//img.alicdn.com/i2/2/TB1oZGMPXXXXXayXFXXSutbFXXX.jpg_150x150q100.jpg_.webp">
+                    <a class="brand-mask" href="#">
+                      <div class="coupon">
+                          <span>依纳</span>
+                      </div>
+                      <div class="enter">
+                        <span>点击进入</span>
+                      </div>
+                    </a>
+                </li>
+                <li>
+                      <img src="//img.alicdn.com/i2/2/TB1_aF7pG6qK1RjSZFmXXX0PFXa?abtest=&amp;pos=6&amp;abbucket=&amp;acm=09042.1003.1.1200415&amp;scm=1007.13029.131809.100200300000000_150x150q100.jpg_.webp">
+                
+                    <a class="brand-mask" href="#">
+                      <div class="coupon">
+                          <span>优惠券 ￥90</span>
+                      </div>
+                      <div class="enter">
+                        <span>点击进入</span>
+                      </div>
+                    </a>
+                </li>
+                <li>
+                    <img src="//img.alicdn.com/i2/2/T1XKtaXn0gV.xXXXXX.jpg_150x150q100.jpg_.webp">
+                    <a class="brand-mask" href="#">
+                      <div class="coupon">
+                          <span>优惠券 ￥200</span>
+                      </div>
+                      <div class="enter">
+                        <span>点击进入</span>
+                      </div>
+                    </a>
+                </li>
+                <li >
+                    <img src="//img.alicdn.com/i2/2/T1wMh5XhVGXXb1upjX.jpg_150x150q100.jpg_.webp">
+                    <a class="brand-mask" href="#">
+                      <div class="coupon">
+                          <span>优惠券 ￥40</span>
+                      </div>
+                      <div class="enter">
+                        <span>点击进入</span>
+                      </div>
+                    </a>
+                </li>
+                <li>
+                    <img src="//img.alicdn.com/i2/2/TB1Im97lVT7gK0jSZFpXXaTkpXa?abtest=&amp;pos=9&amp;abbucket=&amp;acm=09042.1003.1.1200415&amp;scm=1007.13029.131809.100200300000000_150x150q100.jpg_.webp">
+                    <a class="brand-mask" href="#">
+                      <div class="coupon">
+                          <span>优惠券 ￥1700</span>
+                      </div>
+                      <div class="enter">
+                        <span>点击进入</span>
+                      </div>
+                    </a>
+                </li>
+                <li>
+                      <img src="//img.alicdn.com/i2/2/TB1aXJ9IXXXXXbjXFXXSutbFXXX.jpg_150x150q100.jpg_.webp">
+                    <a class="brand-mask" href="#">
+                      <div class="coupon">
+                        
+                          <span>Modern HOUSE</span>
+                        
+                      </div>
+                      <div class="enter">
+                        <span>点击进入</span>
+                      </div>
+                    </a>
+                
+                </li>
+                <li>
+                      <img src="//img.alicdn.com/imgextra/i4/928417138/O1CN019OFNEK22bFcXdLUb5_!!928417138.png_150x150q100.jpg_.webp">
+                    <a class="brand-mask" href="#">
+                      <div class="coupon">
+                        
+                          <span>THE NORTH FACE/北面</span>
+                        
+                      </div>
+                      <div class="enter">
+                        <span>点击进入</span>
+                      </div>
+                    </a>
+                
+                </li>
+                <li>
+                      <img src="//img.alicdn.com/i2/2/TB1KH4GQpXXXXb_apXXSutbFXXX.jpg_150x150q100.jpg_.webp">
+                    <a class="brand-mask" href="#">
+                      <div class="coupon">
+                        
+                          <span>优惠券 ￥1199</span>
+                        
+                      </div>
+                      <div class="enter">
+                        <span>点击进入</span>
+                      </div>
+                    </a>
+                
+                </li>
+                <li>
+                      <img src="//img.alicdn.com/i2/2/TB1pwpNhfBNTKJjy1zdXXaScpXa?abtest=&amp;pos=13&amp;abbucket=&amp;acm=09042.1003.1.1200415&amp;scm=1007.13029.131809.100200300000000_150x150q100.jpg_.webp">
+                    <a class="brand-mask" href="#">
+                      <div class="coupon">
+                        
+                          <span>Neato Robotics</span>
+                        
+                      </div>
+                      <div class="enter">
+                        <span>点击进入</span>
+                      </div>
+                    </a>
+                
+                </li>
+                <li >
+                      <img src="//img.alicdn.com/i2/2/TB1_kq7j1SSBuNjy0FlXXbBpVXa?abtest=&amp;pos=14&amp;abbucket=&amp;acm=09042.1003.1.1200415&amp;scm=1007.13029.131809.100200300000000_150x150q100.jpg_.webp">
+                    <a class="brand-mask" href="#">
+                      <div class="coupon">
+                        
+                          <span>优惠券 ￥350</span>
+                        
+                      </div>
+                      <div class="enter">
+                        <span>点击进入</span>
+                      </div>
+                    </a>
+                
+                </li>
+                <li >
+                      <img src="//img.alicdn.com/i2/2/TB1nJxqJXXXXXchapXXSutbFXXX.jpg_150x150q100.jpg_.webp">
+                    <a class="brand-mask" href="#">
+                      <div class="coupon">
+                        
+                          <span>优惠券 ￥1000</span>
+                        
+                      </div>
+                      <div class="enter">
+                        <span>点击进入</span>
+                      </div>
+                    </a>
+                
+                </li>
+                <li>
+                      <img src="//img.alicdn.com/i2/2/TB1sM7GSXXXXXb3aXXXXXXXXXXX?abtest=&amp;pos=16&amp;abbucket=&amp;acm=09042.1003.1.1200415&amp;scm=1007.13029.131809.100200300000000_150x150q100.jpg_.webp">
+                    <a class="brand-mask" href="#">
+                      <div class="coupon">
+                        
+                          <span>优惠券 ￥100</span>
+                        
+                      </div>
+                      <div class="enter">
+                        <span>点击进入</span>
+                      </div>
+                    </a>
+                
+                </li>
+                <li>
+                      <img src="//img.alicdn.com/i2/2/TB1ytKieRWD3KVjSZKPXXap7FXa?abtest=&amp;pos=17&amp;abbucket=&amp;acm=09042.1003.1.1200415&amp;scm=1007.13029.131809.100200300000000_150x150q100.jpg_.webp">
+                    <a class="brand-mask" href="#">
+                      <div class="coupon">
+                        
+                          <span>帕尔玛之水</span>
+                        
+                      </div>
+                      <div class="enter">
+                        <span>点击进入</span>
+                      </div>
+                    </a>
+                
+                </li>
+                <li >
+                      <img src="//img.alicdn.com/i2/2/TB1m4azzeH2gK0jSZFEXXcqMpXa?abtest=&amp;pos=18&amp;abbucket=&amp;acm=09042.1003.1.1200415&amp;scm=1007.13029.131809.100200300000000_150x150q100.jpg_.webp">
+                    <a class="brand-mask" href="#">
+                      <div class="coupon">
+                        
+                          <span>优惠券 ￥235</span>
+                        
+                      </div>
+                      <div class="enter">
+                        <span>点击进入</span>
+                      </div>
+                    </a>
+                
+                </li>
+                <li>
+                      <img src="//img.alicdn.com/i2/2/TB1R1K4GFmWBuNjSspdSuvugXXa.jpg_150x150q100.jpg_.webp">
+                    <a class="brand-mask" href="#">
+                      <div class="coupon">
+                        
+                          <span>优惠券 ￥1199</span>
+                        
+                      </div>
+                      <div class="enter">
+                        <span>点击进入</span>
+                      </div>
+                    </a>
+                
+                </li>
+                <li>
+                      <img src="//img.alicdn.com/i2/2/T25cAwXGhXXXXXXXXX-1785908005.jpg_150x150q100.jpg_.webp">
+                    <a class="brand-mask" href="#">
+                      <div class="coupon">
+                        
+                          <span>优惠券 ￥1199</span>
+                        
+                      </div>
+                      <div class="enter">
+                        <span>点击进入</span>
+                      </div>
+                    </a>
+                
+                </li>
+                <li>
+                      <img src="//img.alicdn.com/i2/2/TB1igurtrSYBuNjSspfXXcZCpXa?abtest=&amp;pos=21&amp;abbucket=&amp;acm=09042.1003.1.1200415&amp;scm=1007.13029.131809.100200300000000_150x150q100.jpg_.webp">
+                    <a class="brand-mask" href="#">
+                      <div class="coupon">
+                        
+                          <span>优惠券 ￥1199</span>
+                        
+                      </div>
+                      <div class="enter">
+                        <span>点击进入</span>
+                      </div>
+                    </a>
+                
+                </li>
+                <li>
+                      <img src="//img.alicdn.com/i2/2/TB1gOvrmZLJ8KJjy0FnXXcFDpXa?abtest=&amp;pos=22&amp;abbucket=&amp;acm=09042.1003.1.1200415&amp;scm=1007.13029.131809.100200300000000_150x150q100.jpg_.webp">
+                    <a class="brand-mask" href="#">
+                      <div class="coupon">
+                        
+                          <span>Herschel</span>
+                        
+                      </div>
+                      <div class="enter">
+                        <span>点击进入</span>
+                      </div>
+                    </a>
+                
+                </li>
+                <li >
+                      <img src="//img.alicdn.com/i2/2/TB1B0NbcL1G3KVjSZFkXXaK4XXa?abtest=&amp;pos=23&amp;abbucket=&amp;acm=09042.1003.1.1200415&amp;scm=1007.13029.131809.100200300000000_150x150q100.jpg_.webp">
+                    <a class="brand-mask" href="#">
+                      <div class="coupon">
+                        
+                          <span>优惠券 ￥580</span>
+                        
+                      </div>
+                      <div class="enter">
+                        <span>点击进入</span>
+                      </div>
+                    </a>
+                
+                </li>
+                <li>
+                      <img src="//img.alicdn.com/i2/2/TB11204ueL2gK0jSZFmXXc7iXXa?abtest=&amp;pos=24&amp;abbucket=&amp;acm=09042.1003.1.1200415&amp;scm=1007.13029.131809.100200300000000_150x150q100.jpg_.webp">
+                    <a class="brand-mask" href="#">
+                      <div class="coupon">
+                        
+                          <span>德克士</span>
+                        
+                      </div>
+                      <div class="enter">
+                        <span>点击进入</span>
+                      </div>
+                    </a>
+                
+                </li>
+                <li>
+                    <img src="//img.alicdn.com/i2/2/TB1G5bXD9BYBeNjy0FeSuvnmFXa.jpg_150x150q100.jpg_.webp">
+                    <a class="brand-mask" href="#">
+                      <div class="coupon">
+                        
+                          <span>优惠券 ￥400</span>
+                        
+                      </div>
+                      <div class="enter">
+                        <span>点击进入</span>
+                      </div>
+                    </a>
+                
+                </li>
+                <li>
+                    <img src="//img.alicdn.com/i2/2/TB1XcHYHpXXXXXmXXXXSutbFXXX.jpg_150x150q100.jpg_.webp">
+                    <a class="brand-mask" href="#">
+                      <div class="coupon">
+                        
+                          <span>STOKKE</span>
+                        
+                      </div>
+                      <div class="enter">
+                        <span>点击进入</span>
+                      </div>
+                    </a>
+                
+                </li>
+                <li>
+                    <img src="//img.alicdn.com/i2/2/TB1lnhJq9BYBeNjy0FeXXbnmFXa?abtest=&amp;pos=27&amp;abbucket=&amp;acm=09042.1003.1.1200415&amp;scm=1007.13029.131809.100200300000000_150x150q100.jpg_.webp">
+                    <a class="brand-mask" href="#">
+                      <div class="coupon">
+                        
+                          <span>优惠券 ￥490</span>
+                        
+                      </div>
+                      <div class="enter">
+                        <span>点击进入</span>
+                      </div>
+                    </a>
+                
+                </li>
+                <li >
+                    <img src="//img.alicdn.com/i2/2/TB1sC_ZNXT7gK0jSZFpXXaTkpXa?abtest=&amp;pos=28&amp;abbucket=&amp;acm=09042.1003.1.1200415&amp;scm=1007.13029.131809.100200300000000_150x150q100.jpg_.webp">
+                    <a class="brand-mask" href="#">
+                      <div class="coupon">
+                        
+                          <span>优惠券 ￥70</span>
+                        
+                      </div>
+                      <div class="enter">
+                        <span>点击进入</span>
+                      </div>
+                    </a>
+                
+                </li>
+                <li >
+                    <img src="//img.alicdn.com/i2/2/TB16oQ2IVXXXXXuXXXXSutbFXXX.jpg_150x150q100.jpg_.webp">
+                    <a class="brand-mask" href="#">
+                      <div class="coupon">
+                        
+                          <span>优惠券 ￥400</span>
+                        
+                      </div>
+                      <div class="enter">
+                        <span>点击进入</span>
+                      </div>
+                    </a>
+                </li>
+                <li>
+                  <div class="huanyipi">
+                    <span  class="iconfont icon-huanyipi" style="font-size: 23px; color: rgb(187, 176, 176);"></span>
+                    <p>
+                      换一批
+                    </p>
+                  </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="chaoshi_head">
+
+        <div class="chaoshi">
+          <div class="top_shangpin">
+              <img id="t" src="https://img.alicdn.com/tfs/TB1Q67hXPihSKJjy0FeXXbJtpXa-428-50.png" alt="">
+          </div>
+          <div class="left_shangpin">
+              <a class="" href="#">
+                
+                  <img src="https://img.alicdn.com/tfs/TB1nveReMoQMeJjy1XaXXcSsFXa-235-618.png">
+                  <div class="banner-detail">
+                    
+                      
+                      <div class="left-right">
+                        <span>天猫专享</span>
+                      <br>
+                      <span>进口水果季</span>
+                      </div>
+                      <div class="left-left">
+                        <span >韩国进口</span>
+                      </div>
+                  </div>
+                  <div class="detail-end">
+                      <img src="https://img.alicdn.com/tfs/TB1IQBtXaagSKJjy0FbXXa.mVXa-68-68.png">
+                  </div>
+              </a>
+          </div>
+          <div class="right_shangpin">
+            <div class="xia">
+                <a  href="#">
+                  <div class="fanzhuang">
+                    <span>量贩装</span>
+                  </div>
+                  <div class="right-detail">
+                    <div class="baoyou">
+                        <img class="cla-icon" src="https://img.alicdn.com/tfs/TB12RqQewMPMeJjy1XdXXasrXXa-23-23.png">
+                        <span>单件包邮</span>
+                        <div class="dijia">低价享不停</div>
+                    </div>
+                    
+                  </div>
+                  <div class="white">
+                    <img class="item-img" src="https://img.alicdn.com/tps/i4/TB1YHy.gBcHL1JjSZFBwu1iGXXa.png" data-spm-anchor-id="875.7931836/B.2017039.i5.66144265qJQTiF">
+                  </div>
+                </a>
+                </div>
+            </div>
+
+          <a class="one" href="#">
+              <img class="floor-item-img" src="//gw.alicdn.com/bao/uploaded/i1/90/O1CN01eHDd7h1CXGHGdO4VW_!!90-0-lubanu.jpg" data-spm-anchor-id="875.7931836/B.2017039.i4.66144265qJQTiF">
+              <div class="item-title">百草味 手撕面包1kg全麦整箱早餐饼干网红蛋糕点心礼盒装零食小吃</div>
+              <div class="price">￥22.9</div>
+          </a>
+
+          <a class="two" href="#">
+              <img class="floor-item-img" src="//gw.alicdn.com/bao/uploaded/i4/725677994/O1CN01scdd5v28vImTBQjpV_!!0-item_pic.jpg">
+              <div class="item-title">Septwolves/七匹狼男士保暖内衣加绒加厚秋冬季防寒秋衣秋裤套装</div>
+              <div class="price">￥79</div>
+          </a>
+              
+          <a class="three "href="#">
+              <img class="floor-item-img" src="//gw.alicdn.com/bao/uploaded/i4/199/O1CN019RQK4P1DLBRyiGfeQ_!!199-0-lubanu.jpg">
+              <div class="item-title">【超定制】威王8效洁厕液瓶洁厕剂送洁厕块去污除菌500g*6</div>
+              <div class="price">￥39.9</div>
+          </a>
+          <a class="four "href="#">
+            <img class="floor-item-img" src="//gw.alicdn.com/bao/uploaded/i4/725677994/O1CN01PsEX9828vImhh63MY_!!0-item_pic.jpg">
+            <div class="item-title">小熊绞肉机家用电动小型料理机多功能打肉馅碎菜器辣椒搅拌辅食机</div>
+            <div class="price">￥99</div>
+        </a>
+        <a class="five " href="#">
+          <img class="floor-item-img" src="//gw.alicdn.com/bao/uploaded/i4/725677994/O1CN0109BFvD28vImY1BU5k_!!0-item_pic.jpg" data-spm-anchor-id="875.7931836/B.2017039.i0.66144265qJQTiF">
+          <div class="item-title">沃德百惠日式泡面碗带盖家用单个碗筷餐具套装学生饭盒泡面碗神器</div>
+          
+            <div class="price">￥12.9</div>
+        </a>
+          <a class="six "href="#">
+            <img class="floor-item-img" src="//gw.alicdn.com/bao/uploaded/i2/725677994/O1CN01rEDAsT28vImYMzlrg_!!0-item_pic.jpg">
+                    <div class="item-title">Free迷你巾带护翼50片mini卫生巾护垫女整箱日用组合姨妈巾</div>
+                    
+                      <div class="price">￥29.9</div>
+          </a>
+          </div>
+
+          </div>
+    
+          <nav class="lala">
+            <ul class="zuobian">
+              <li class="a1">
+                <div id="nav">
+                  <a href="#">导航
+                  </a>
+                </div>
+              </li>
+              <li class="a3">
+                <div>
+                  <a href="#">天猫超市</a>
+                </div>
+              </li>
+              <li  class="a2">
+                <div>
+                  <a href="#">天猫国际</a>
+                </div>
+              </li>
+              <li class="a2">
+                <div>
+                  <a href="#">美丽人生</a>
+                </div>
+                
+              </li>
+              <li class="a2">
+                <div>
+                  <a href="#">潮玩酷玩</a>
+                </div>
+                
+              </li>
+              <li class="a2">
+                <div>
+                  <a href="#">居家生活</a>
+                </div>
+                
+              </li>
+              <li class="a2">
+                <div>
+                   <a href="#">打造爱巢</a>
+                </div>
+               
+              </li>
+              <li class="a2">
+                <div>
+                   <a href="#">户外出行</a>
+                </div>
+               
+              </li>
+              <li class="a2">
+                <div>
+                   <a href="#">猜你喜欢</a>
+                </div>
+               
+              </li>
+              <li class="a4">
+                <div id="bottom">
+                  <i class="iconfont icon-jiantouxiangshang" style="color: white;"></i>
+                  <a href="#">顶部</a>
+                </div>
+                
+              </li>
+            </ul>
+          </nav>
+
+          
+  </div>
+  <div class="end-head">
+    <div class="end clearfix">
+      <a id="first" href="#">
+        <img src="../img/one.png" alt="">
+      </a> 
+      <a id="second" href="#">
+        <img src="../img/two.png" alt="">
+      </a> 
+      <a id="third" href="#">
+        <img src="../img/three.png" alt="">
+      </a> 
+      <a id="forth" href="#">
+        <img src="../img/four.png" alt="">
+      </a> 
+      <div class="jiange"></div>
+      <div class="end-center">
+        <ul class="zhinan">
+          <span id="title">购物指南</span>
+          <li>
+            <a href="#">免费注册</a>
+          </li>
+          <li>
+            <a href="#">开通支付宝</a>
+          </li>
+          <li>
+            <a href="#">支付宝充值</a>
+          </li>
+        </ul>
+        <ul class="baozhang">
+          <span id="title">天猫保障</span>
+          <li>
+            <a href="#">发票保障</a>
+          </li>
+          <li>
+            <a href="#">售后规则</a>
+          </li>
+          <li>
+            <a href="#">缺货赔付</a>
+          </li>
+        </ul>
+        <ul class="zhifu">
+          <span id="title">支付方式</span>
+          <li>
+            <a href="#">快捷支付</a>
+          </li>
+          <li>
+            <a href="#">信用卡</a>
+          </li>
+          <li>
+            <a href="#">余额宝</a>
+          </li>
+          <li>
+            <a href="#">蚂蚁花呗</a>
+          </li>
+          <li>
+            <a href="#">货到付款</a>
+          </li>
+          
+        </ul>
+        <ul class="fuwu">
+          <span id="title">商家服务</span>
+          <li>
+            <a href="#">天猫规则</a>
+          </li>
+          <li>
+            <a href="#">商家入驻</a>
+          </li>
+          <li>
+            <a href="#">商家中心</a>
+          </li>
+          <li>
+            <a href="#">天猫智库</a>
+          </li>
+          <li>
+            <a href="#">物流服务</a>
+          </li>
+          <li>
+            <a href="#">喵言喵语</a>
+          </li>
+          <li>
+            <a href="#">运营服务</a>
+          </li>
+        </ul>
+          <ul class="tianmao">
+            <span id="title">
+              手机天猫
+            </span>
+            <li id="shoujitianmao">
+              <img src="https://img.alicdn.com/tfscom/TB14MWoNhjaK1RjSZFAwu2dLFXa.png" alt="">
+            </li>
+          </ul>
+          <img id="mao" src="../img/tianmao.png" alt="">
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-head">
+    <div class="footer">
+      <div class="c11">
+          <a href="#">关于天猫</a>
+          <a href="#">商家服务大厅</a>
+          <a href="#">开放平台</a>
+          <a href="#">诚聘英才</a>
+          <a href="#">联系我们</a>
+          <a href="#">网站合作</a>
+          <a href="#">法律声明</a>
+          <a href="#">隐私权政策</a>
+          <a href="#">知识产权</a>
+          <a href="#">廉政举报</a>
+          <a href="#">规则意见征集</a>
+          <a href="#">不当竞争举报</a>
+      </div>
+      <div class="c22">
+          <a href="#">阿里巴巴集团</a>
+          <span>|</span>
+          <a href="#">淘宝网</a>
+          <span>|</span>
+          <a href="#">天猫</a>
+          <span>|</span>
+          <a href="#">聚划算</a>
+          <span>|</span>
+          <a href="#">全球速卖通</a>
+          <span>|</span>
+          <a href="#">阿里巴巴国际交易市场</a>
+          <span>|</span>
+          <a href="#">1688</a>
+          <span>|</span>
+          <a href="#">阿里妈妈</a>
+          <span>|</span>
+          <a href="#">飞猪</a>
+          <span>|</span>
+          <a href="#">阿里云计算</a>
+          <span>|</span>
+          <a href="#">AliOS</a>
+          <span>|</span>
+          <a href="#">阿里通信</a>
+          <span>|</span>
+          <a href="#">万网</a>
+          <span>|</span>
+          <a href="#">高德</a>
+          <span>|</span>
+          <a href="#">UC</a>
+          <span>|</span>
+          <a href="#">友盟</a>
+          <span>|</span>
+          <a href="#">虾米</a>
+          <span>|</span>
+          <a href="#">钉钉</a>
+          <span>|</span>
+          <a href="#">支付宝</a>
+          <span>|</span>
+          <a href="#">阿里安全</a>
+      </div>
+      <div class="c33">
+          <a href="#">增值电信业务经营许可证：浙B2-20110446</a>
+          <span>市场名称登记证：工商网市字3301004119号</span>
+          <span>出版物网络交易平台服务经营备案证： 新出发浙备字第2019002号</span>
+      </div>
+      <div class="c44">
+          <span>互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</span>
+          <span>互联网药品信息服务资质证书编号：
+              <a href="#">浙-（经营性）-2017-0005</a>
+          </span>
+          <span> 
+              <img src="//img.alicdn.com/tps/TB1yEqRPXXXXXXPXpXXXXXXXXXX-20-20.png" style="position:relative;top:5px;vertical-align:baseline;" data-spm-anchor-id="a2240.7829288.a2226n1.i2.1c364fe5U9vQS2">
+              浙公网安备 33010002000120号</span>
+      </div>
+      <div class="c55">
+          <span>医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00002号</span>
+      </div>
+      <div class="c66">
+          <span>浙江省网络食品销售第三方平台提供者备案：浙网食A33010002</span>
+          <span class="special">12318举报</span>
+          <span class="special">浙B2-20110446-1</span>
+      </div>
+      <div class="c77">
+          <span class="special">© 2003-现在 TMALL.COM 版权所有</span>
+      </div>
+      <div class="c88">
+        <img  id="ll"src="https://img.alicdn.com/tfs/TB1MQX3cBr0gK0jSZFnXXbRRXXa-65-70.gif" alt="">
+        <img src="https://img.alicdn.com/tps/i1/TB13mgzHXXXXXbjXVXXzby4IVXX-80-30.jpg" alt="">
+      </div>
+  </div>
+  </div>
+  <nav class="lala">
+    <ul class="zuobian">
+      <li class="a1">
+        <div id="nav">
+          <a href="#">导航
+          </a>
+        </div>
+      </li>
+      <li class="a3">
+        <div>
+          <a href="#">天猫超市</a>
+        </div>
+      </li>
+      <li  class="a2">
+        <div>
+          <a href="#">天猫国际</a>
+        </div>
+      </li>
+      <li class="a2">
+        <div>
+          <a href="#">美丽人生</a>
+        </div>
+        
+      </li>
+      <li class="a2">
+        <div>
+          <a href="#">潮玩酷玩</a>
+        </div>
+        
+      </li>
+      <li class="a2">
+        <div>
+          <a href="#">居家生活</a>
+        </div>
+        
+      </li>
+      <li class="a2">
+        <div>
+           <a href="#">打造爱巢</a>
+        </div>
+       
+      </li>
+      <li class="a2">
+        <div>
+           <a href="#">户外出行</a>
+        </div>
+       
+      </li>
+      <li class="a2">
+        <div>
+           <a href="#">猜你喜欢</a>
+        </div>
+       
+      </li>
+      <li class="a4">
+        <div id="bottom">
+          <i class="iconfont icon-jiantouxiangshang" style="color: white;"></i>
+          <a href="#">顶部</a>
+        </div>
+        
+      </li>
+    </ul>
+  </nav>
+
+</body>
+</html>

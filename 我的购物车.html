@@ -1,0 +1,1510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../source/chongzhi.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2620486_x9th9g8j4rc.css">
+    <link rel="stylesheet" href="../layout/css/all.css">
+    <link rel="stylesheet" href="../大一下/我的购物车.css">
+    <title>淘宝网 - 我的购物车</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::before,.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+} 
+body a{
+    font: 12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+body span{
+    font: 12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+body{
+    font:12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+a{
+    color: #6c6c6c;
+    text-decoration: none;
+}
+.top-head{
+    width: 100%;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #eee;
+}
+.top{
+    padding-left: 120px;
+    font-size: 12px;
+    width:1115.33px ;
+    height: 36px;
+    margin: 0 auto;
+}
+.top li{
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    margin-right: 10px;
+}
+.top li:nth-child(1){
+    display: inline-block;
+    width: 98px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.iconfont{
+    font-size: xx-small;
+    color: #9c9c9c;
+}
+#chengse{
+    color: #ff4400;
+}
+.top a:hover{
+    color: #F40;
+}
+.l4:hover a,
+.l4:hover a i{
+    color: #ff4400;
+}
+.num{
+    font-weight: bold;
+}
+.l1{
+    margin-left: 30px;
+}
+.l2{
+    margin-left: 10px;
+}
+.l3{
+    margin-left: 6px;
+}
+.content-head{
+    width: 100%;
+    background-color: white;
+}
+.content{
+    width: 1265.33px;
+    margin: 0 auto;
+    position: relative;
+}
+.nav img{
+    display: block;
+    width: 181px;
+    height: 45px;
+    margin-left: 130px;
+    padding-top: 18px;
+} 
+.sousuo{
+    float: left;
+    border: 4px solid #ff5000;
+    width: 520px;
+    height: 28px;
+    position: relative;
+    top: -40px;
+    left: 600px;
+}
+.top_search::placeholder{
+    background-position: -370px -20px;
+    background-image: url(//gtd.alicdn.com/tps/i4/T1OdGtFaxfXXXa78nI-400-200.png);
+    background-repeat: no-repeat;
+}
+.top_search{
+    width: 420px;
+    height: 28px;
+    position: absolute;
+    top: 0;
+    left:80px;
+    border: transparent;
+    outline: none;
+    text-indent: 10px;
+    
+}
+#tu{
+    width: 20px;
+    height:20px;
+    position: absolute;
+    top: 15%;
+    transform: translateY(-50%);
+    left: -50px;
+}
+input:focus + #tu{
+    display: none;
+}
+.sousuo a{
+    display: block;
+    width: 80px;
+    height: 18px;
+    background-color: #f5f5f5;
+    padding: 5px;
+    padding-left: 20px;
+}
+.search{
+    width: 99.5px;
+    height: 28px;
+    position: absolute;
+    top: 0;
+    left: 81%;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #ff5000;
+    border: 1px solid #ff5000;
+    cursor: pointer;
+}
+.top-nav{
+    font-size: 16px;
+    width:990px;
+    margin: 0 auto;
+    border-bottom: 2px solid #e6e6ee;
+    padding-bottom: 15px;
+    position: relative;
+    
+}
+.top-nav .left{
+    float: left;
+    position: relative;
+}
+.top-nav a{
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    font-family: 'Hiragino Sans GB','Lantinghei SC','Microsoft Yahei',SimSun;
+}
+.top-nav .right{
+    float: right;
+}
+.top-nav .left{
+    text-align:center ;
+}
+.xian1:hover{
+    cursor: pointer;
+}
+.top-nav .xia1,
+.top-nav .xia2,
+.top-nav .xia3{
+    width: 100px;
+    text-align: center;
+    padding-right: 20px;
+}
+.xian{
+    width: 1px;
+    height: 15px;
+    background-color: #e0dddd;
+    margin-top: 5px;
+}
+.top-nav .left span{
+    color:#ff5000;
+    font-weight: lighter;
+    font-size: 15px;
+}
+.top-nav .right{
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.top-nav .right a{
+    margin-top: -5px;
+    display: block;
+    width: 55px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #aaa;
+    outline:none ;
+    align-items: center;
+    text-align: center;
+    font-size: 9px;
+    color: white;
+    font-weight: lighter;
+    border-radius: 4px;
+    cursor: no-drop;
+}
+label{
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 10px;
+    height: 10px;
+    background-position: 0 0;
+    line-height: 200em;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid #c3c3c3;
+    
+}
+.top-bar{
+    width:990px;
+    margin: 0 auto;
+    font-size: 12px;
+    padding-bottom: 30px;
+}
+
+.top-bar li{
+    font-weight: lighter;
+    margin-top: 20px;
+    float: left;
+}
+.red-strip{
+    display: inline-block;
+    width: 120px;
+    height: 2px;
+    background-color: #f40;
+    position: absolute;
+    top: 45px;
+    left: -362px;
+}
+.xia1:hover{
+    cursor: pointer;
+}
+.xia2:hover,.xia3:hover,.teshu:hover{
+    cursor: no-drop;
+}
+.xia2:hover ~.red-strip{
+    animation: change1 2s infinite ease-in-out;
+}
+.teshu:hover ~.red-strip{
+    animation: change1 2s infinite ease-in-out;
+}
+.xia3:hover ~ .red-strip{
+    animation: change2 2s infinite ease-in-out;
+}
+@keyframes change1{
+    0%,100%{
+        transform: translateX(120px);
+    }
+}
+@keyframes change2{
+    0%,100%{
+        transform: translateX(240px);
+    }
+}
+.dianpu{
+    width: 990px;
+    margin: 0 auto;
+    color: #3c3c3c;
+}
+.dianpu1{
+    margin-left: 15px;
+    font-size: 12px;
+    line-height: 20px;
+    height: 20px;
+}
+body{
+    font-family: Verdana,Tahoma,arial;
+}
+.dianpu1 label{
+    margin-top: 5px;
+}
+.dianpu1 .wenzi:hover{
+    color: #f40;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.dianpu1 img{
+    display: inline-block;
+    vertical-align: middle;
+}
+.xiaolan{
+    background-image: url(//gtd.alicdn.com/tps/i1/T15AD7FFFaXXbJnvQ_-130-60.gif);
+    text-decoration: none!important;
+    width: 20px;
+    height: 20px;
+    zoom: 1;
+    display: inline-block;
+    background-position: -80px 0;
+    vertical-align: bottom;
+}
+.dianpu11{
+    width: 990px;
+    height: 123px;
+    background-color:#FCFCFC;
+    margin-top: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #d1d1d1;
+    position: relative;
+}
+.dianpu11 div{
+    float: left;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.dianpu11 label{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.dianpu11 span{
+    display: block;
+    width: 186px;
+    height: 36px;
+
+}
+.dianpu11 span:hover{
+    color: #f40;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.dianpu11 .jieshao img{
+    margin-top: 28px;
+}
+.dianpu11 .jieshao img:hover{
+    cursor: pointer;
+}
+.dianpu11 .color{
+    position: relative;
+    margin-left: 30px;
+    width:140px ;
+    height: 98px;
+    color: #9c9c9c;
+    margin-top: -0px;
+    padding-top: 20px;
+    padding-left: 15px;
+    border: 1px dotted transparent;
+}
+.dianpu11 .danjia{
+    /* width: 120px; */
+    height: 119px;
+}
+.dianpu11 #shanchu{
+    color: #9c9c9c;
+    text-decoration: line-through;
+    font-family: Verdana,Tahoma,arial;
+}
+.dianpu11 #xianjia{
+    font-weight: bold;
+    margin-top: -20px;
+    font-family: Verdana,Tahoma,arial;
+}
+.jine{
+    color: #ff4000;
+    font-weight: bold;
+}
+.xia2 a,
+.xia3 a{
+    display: inline-block;
+    height: 31px;
+}
+.xia2 a:hover,
+.xia3 a:hover{
+    cursor:not-allowed;
+    cursor:no-drop;
+}
+.dianpu11:hover .color{
+    border: 1px dotted #e0dddd;
+    
+}
+.dianpu11:hover .color img{
+    display: inline-block;
+}
+.dianpu11:hover .color a{
+    display: none;
+}
+.dianpu11 .color:hover{
+    border: 1px dotted #ff4000;
+}
+.dianpu11 .color:hover a{
+    display: inline-block;
+}
+.color img{
+    position: absolute;
+    top: -1px;
+    left: 140px;
+    display: none;
+}
+#bian{
+    margin-left: 30px;
+}
+#bian:hover{
+    color: #f40;
+    text-decoration: underline;
+}
+.color a{
+    display: inline-block;
+    width:31px;
+    height: 17px;
+    background: #f60;
+    color: white;
+    position: absolute;
+    top:-1px;
+    left: 81.5%;
+    display: none;
+}
+.jianshu .left{
+    width: 19px;
+    height: 20px;
+    background-color: #F0F0F0;
+    border: 1px solid  #e5e5e5;
+}
+
+.jianshu .right{
+    width: 19px;
+    height: 22px;
+    background-color: #F0F0F0;
+    border: 1px solid  #e5e5e5;
+}
+.jianshu .center{
+    width: 41px;
+    height: 21px;
+    background-color: white;
+    border: 1px solid #999;
+    text-align: center;
+    padding-top:4px ;
+}
+.jianshu li{
+    float: left;
+}
+.jianshu .left{
+    color: #e5e5e5;
+    text-indent: 7px;
+    margin-left: 30px;
+    padding-top: 5px;
+}
+
+.jianshu .right{
+    padding-top: 3px;
+    text-indent: 3px;
+    margin-right: 40px;
+}
+.jianshu .right:hover{
+    border: 1px solid red;
+    color: red;
+    cursor: pointer;
+}
+.jine{
+    width: 105px;
+}
+.caozuo  li{
+    margin-bottom: 5px;
+    color: #3c3c3c;
+    font: 12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+.caozuo li:nth-child(3){
+    display: none;
+}
+.dianpu11:hover .caozuo li:nth-child(3){
+    display: inline-block;
+}
+.bottom{
+    width: 1000px;
+    padding-top: 10px;
+    height: 40px;
+    background-color: #E5E5E5;
+    font-size: 12px;
+    position:sticky;
+    bottom:0%;
+    left: 10%;
+    margin: 0 auto;
+    z-index: 9999;
+}
+.bottom label{
+    margin-top: 10px;
+    margin-left: 5px;
+    background-color: white;
+}
+.caozuo li:hover{
+    cursor: pointer;
+    color: #f40;
+}
+.bottom .r1{
+    margin-left: 380px;
+    font-size: 12px;
+    font-weight: lighter;
+    color: #3c3c3c;
+    cursor: pointer;
+    margin-right: 50px;
+}
+.bottom .r1 span{
+    color: #f40;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 5px;
+}
+.bottom .r span{
+    color: #f40;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 5px;
+}
+.bottom .r2{
+    margin-left: 3px;
+    position: absolute;
+    top:-0px ;
+    right: -0px;
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #aaa;
+    outline:none ;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-weight: lighter;
+    cursor: no-drop;
+}
+.remai{
+    width: 990px;
+    margin: 0 auto;
+    height: 30px;
+    margin-top: 40px;
+    border-bottom:2px solid #e6e6ee;
+}
+.lunbo{
+    width: 990px;
+    margin: 0 auto;
+    height:490px;
+}
+.lunbo li{
+    float: left;
+    margin-left: 15px;
+    /* border-bottom:1px solid red ; */
+}
+.lunbo .remai a{
+    font-family: none ;
+    color: #000;
+    font-size: 14px;
+    font-weight: bolder;
+}
+.lunbo .red-strip{
+    width: 87px;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    top: 30px;
+    left: -15px;
+}
+.remai{
+    position: relative;
+
+}
+.lunbo img{
+    width: 230px;
+    height: 230px;
+}
+.lunbo .xianjia{
+    margin-left: 5px;
+    color: #f40;
+    font-weight: bolder;
+    font-size: 16px;
+}
+.lunbo .yuanjia{
+    margin-left: 5px;
+    color: rgb(156, 152, 152);
+    text-decoration: line-through;
+}
+.dianming{
+    margin-left: 5px;
+    color: #666;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.xiao{
+    margin-left: 5px;
+    color: #9a9a9a;
+    margin-bottom: 8px;
+}
+.li1 li,
+.li2 li,
+.li3 li,
+.li4 li,
+.li5 li{
+    box-sizing:border-box;
+    border: 1px #e6e6ee solid;
+    margin-left: 0px;
+    margin-top: -10px;
+    margin-right: 20px;
+}
+.li1 li:nth-child(4),
+.li2 li:nth-child(4),
+.li3 li:nth-child(4),
+.li4 li:nth-child(4),
+.li5 li:nth-child(4){
+    margin-right: 0px;
+}
+.li1 li:hover,
+.li2 li:hover,
+.li3 li:hover,
+.li4 li:hover,
+.li5 li:hover{
+    border:  1px #f40 solid;
+}
+.li1,
+.li2,
+.li3,
+.li4,
+.li5{
+    position: absolute;
+}
+.lunbo label[for^="button"]{
+    width: 12px;
+    height: 12px;
+    border: none;
+    border-radius: 50%;
+    background-color: #d1d1d1;
+    position: relative;
+    top: 330px;
+    left: 450px;
+    margin-right: 10px;
+}
+#button1:hover ~ label[for="button1"],
+#button1:checked ~ label[for="button1"] {
+    background: #f40;
+}
+#button2:hover ~ label[for="button2"],
+#button2:checked ~ label[for="button2"]  {
+    background: #f40;
+}
+
+#button3:hover ~ label[for="button3"] ,
+#button3:checked ~ label[for="button3"] {
+    background:#f40;
+}
+#button4:hover ~ label[for="button4"],
+#button4:checked ~ label[for="button4"]  {
+    background: #f40;
+}
+#button5:hover ~ label[for="button5"],
+#button5:checked ~ label[for="button5"]  {
+    background: #f40;
+}
+#button1:checked ~ .li1{
+    display: block;
+}
+#button1:checked ~.li2,
+#button1:checked ~.li3,
+#button1:checked ~.li4,
+#button1:checked ~.li5 {
+    display: none;
+}
+#button2:checked ~.li2{
+    display: block;
+}
+#button2:checked ~.li1 ,
+#button2:checked ~.li3 ,
+#button2:checked ~.li4 ,
+#button2:checked ~.li5 {
+    display: none;
+}
+#button3:checked ~.li3{
+    display: block;
+}
+#button3:checked ~.li1 ,
+#button3:checked ~.li2 ,
+#button3:checked ~.li4 ,
+#button3:checked ~.li5 {
+    display: none;
+}
+#button4:checked ~.li4{
+    display: block;
+}
+#button4:checked ~.li1 ,
+#button4:checked ~.li3 ,
+#button4:checked ~.li2 ,
+#button4:checked ~.li5 {
+    display: none;
+}
+#button5:checked ~.li5{
+    display: block;
+}
+#button5:checked ~.li1 ,
+#button5:checked ~.li3 ,
+#button5:checked ~.li4 ,
+#button5:checked ~.li2 {
+    display: none;
+}
+.li1{
+    display: block;
+}
+.li2,
+.li3,
+.li4,
+.li5{
+    display: none;
+}
+.end{
+    color:#6c6c6c ;
+    border-top: 1px solid  #e6e6ee;
+    padding-top: 15px;
+    width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+.c1 span{
+    color:  #e6e6ee;
+}
+.c2{
+    color: #e6e6ee;
+    border-bottom: 1px solid  #e6e6ee;
+    padding-bottom: 15px;
+    margin-top: 8px;
+}
+.c1 a,.c2 a{
+    color:#6c6c6c ;
+    margin-left: 1px;
+    margin-right: 4px;
+}
+.c9{
+    margin-top: 10px;
+}
+.c9 a{
+    margin-right: 12px;
+}
+.c1 a:hover,.c2 a:hover,.c9 a:hover{
+    color: #f40;
+}
+.c3 a,
+.c3 span{
+    margin-right: 6%;
+}
+.c3 a{
+    color:#6c6c6c ;
+}
+.c3 span{
+    color: #666;
+}
+.c3{
+    margin-top: 0.8%;
+}
+.c4 span{
+    margin-right: 5%;
+    color: #666;
+}
+.c5,.c6{
+    color: #666;
+}
+.c5,.c6,.c7{
+    margin-top: 0.3%;
+}
+.c6 span{
+    margin-right: 5%;
+}
+
+#yiru{
+    position: absolute;
+    left: 140px;
+    top: -13px;
+    padding: 10px;
+    background-color: white;
+    z-index: 99;
+    border: 1px #ccc solid;
+    display: none;
+    box-shadow: 0 1px 1px rgba(0, 0,0, .2);
+
+}
+#little{
+    width: 0px;
+    height: 0px;
+}
+#little::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    border: 10px solid transparent;
+    border-bottom: none;
+    border-top-color: white;
+    bottom: 70px;
+    z-index: 100;
+    left: 128px;
+    margin: auto;
+    transition: all .2s;
+    transform: rotate(90deg);
+    position: absolute;
+}
+#little::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    border: 10px solid transparent;
+    border-bottom: none;
+    border-top-color: rgb(194, 189, 189);
+    bottom: 70px;
+    z-index: 3;
+    left: 127px;
+    display: none;
+    margin: auto;
+    transition: all .2s;
+    transform: rotate(90deg);
+    position: absolute;
+}
+#before:hover ~ #yiru{
+    display: block;
+}
+#before:hover,
+#yiru:hover{
+    cursor: pointer;
+}
+#before:hover ~ #little::before{
+    display: block;
+}
+.youce{
+    position: fixed;
+    top: 65%;
+    left: 96%;
+}
+.youce a{
+    /* display: none; */
+    width: 35px;
+    height: 35px;
+    background: #F5F5F5;
+    border: 1px solid #ebebeb;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+.youce a i{
+    font-size: 15px;
+}
+.youce div{
+    display: none;
+    width: 35px;
+    height: 35px;
+    color: white;
+    background:#AAAAAA;
+    align-items: center;
+    padding-left: 5px;
+    justify-content: center;
+}
+.youce a:hover i{
+    display: none;
+}
+.youce a:hover div{
+    display: block;
+}
+@media (min-width: 1400px) and (max-width:9999px) {
+    /* .bottom{
+        left: 7.5%;
+        margin-left: 100px;
+    } */
+}
+    </style>
+</head>
+<body style="overflow:-Scroll;overflow-x:hidden">
+    <div class="top-head clearfix">
+        <ul class="top">
+            <li>
+                <a href="#">你似初阳我不及你的光</a>
+            </li>
+            <li><i class="iconfont icon-jiantou"></i></li>
+            <li>
+                <a href="#">手机逛淘宝</a>
+            </li>
+            <li class="l1">
+                <a href="#">淘宝网首页</a>
+            </li>
+            <li class="l2">
+                <a href="#">我的淘宝 </a>
+                <i class="iconfont icon-jiantou"></i>
+            </li>
+            <li   class="l3">
+                <i id="chengse" class="fas fa-shopping-cart" > </i>
+                <a href="#"> 购物车 <span id="chengse" class="num">4</s></a>
+                <i class="iconfont icon-jiantou"></i>
+            </li>
+            <li class="l3 l4">
+                <a href="#">
+                    <i class="iconfont icon-star_full"></i>
+                    收藏夹
+                </a>
+                <i class="iconfont icon-jiantou"></i>
+            </li>
+            <li class="l3">
+                <a href="#">商品分类</a>
+            </li>
+            <li class="l3">
+                <a href="#">免费开店</a>
+            </li>
+            <li style="color: #9c9c9c;">|</li>
+            <li class="l3">
+                <a href="#">千牛卖家中心</a>
+                <i class="iconfont icon-jiantou"></i>
+            </li>
+            <li class="l3">
+                <a href="#">联系客服</a>
+                <i class="iconfont icon-jiantou"></i>
+            </li>
+            <li class="l3">
+                <a href="#">
+                    <i id="chengse" class="iconfont icon-daohang"></i>
+                    网站导航</a>
+                <i class="iconfont icon-jiantou"></i>
+            </li>
+        </ul>
+    </div>
+    <div class="content-head clearfix">
+        <div class="content clearfix">
+            <div class="nav clearfix">
+                <img src="//img.alicdn.com/imgextra/i1/O1CN015ZbpMf1Dps0oNq4dh_!!6000000000266-2-tps-181-45.png" alt="">
+                <div class="sousuo clearfix">
+                    <a href="#"> 宝贝 &nbsp;&nbsp;&nbsp;<i class=" blank iconfont icon-jiantou"></i></a>
+                    <input type="text" class="top_search" >
+                    <img id="tu" src="../img/sousuo.png" alt="">
+                    <button class="search">搜 索</button>
+                    </img>
+                </div>
+            </div>
+            <ul class="top-nav clearfix">
+                <li class="left xia1"><em><a id="changliang" href="#" style="color: #ff5000;">全部商品 4</a></em></li>
+                <li class="left xian"></li>
+                <li class="left xia2"><a href="#">&nbsp;&nbsp;&nbsp;降价商品 <span>0</span>
+                </a></li>
+                <li class="left xian teshu"></li>
+                <li class="left xia3"><a href="#">&nbsp;&nbsp;&nbsp;库存紧张 <span>0</span></a></li>
+                <li class="right">
+                    <a>结&nbsp;算</a>
+                </li>
+                <li class=" left red-strip"></li>
+                <li class="right" style="color: #ff5000; font-weight: bold;">0.00</li>
+                <li class="right">已选商品（不含运费）</li>
+                
+            </ul>
+            <ul class="top-bar clearfix">
+                <li style="width: 100px;">
+                    <label></label>&nbsp;&nbsp;全选
+                </li>
+                <li style="width: 390px;">商品信息</li>
+                <li style="width: 100px;">单价</li>
+                <li style="width: 110px;">数量</li>
+                <li style="width: 110px;">金额</li>
+                <li>操作</li>
+            </ul>
+            <div class="dianpu">
+                <div class="dianpu1">
+                    <label></label>&nbsp;&nbsp;
+                    <img width="16px" height="16px" src="../img/购物车1.png" alt="">&nbsp;&nbsp;
+                    <span class="wenzi">
+                        店铺： ukiss旗舰店
+                    </span>
+                    <a class="xiaolan" href="#"></a>
+                </div>
+                <div class="dianpu11">
+                    <label></label>&nbsp;&nbsp;
+                    <div>
+                        <img id="before" src="https://img.alicdn.com/bao/uploaded/i2/2414806177/O1CN015v4mGe1vV7BBQ4XzU_!!2414806177.jpg_80x80.jpg" alt="">
+                        <img id="yiru"src="https://img.alicdn.com/bao/uploaded/i2/2414806177/O1CN015v4mGe1vV7BBQ4XzU_!!2414806177.jpg_240x240.jpg" alt="">
+                        <span id="little"></span>               
+                    </div>
+                    <div class="jieshao">
+                        <span>UKISS睫毛打底膏防水纤长卷翘不晕染不脱妆定型液正品大牌雨衣女</span>
+                        <img src="//assets.alicdn.com/sys/common/icon/trade/xcard.png" alt="">
+                        <img src="//img.alicdn.com/tps/i3/T1Vyl6FCBlXXaSQP_X-16-16.png" alt="">
+                        <img src="//img.alicdn.com/tps/i4/T1BCidFrNlXXaSQP_X-16-16.png" alt="">
+                    </div>
+                    <div class="color">颜色分类：自然黑
+                        <img width="16px" height="16px" src="../img/修改.png" alt="">
+                        <a href="#">&nbsp;修改</a>
+                    </div>
+                    <div class="danjia"><p id="shanchu">￥98.00</p><br><p id="xianjia">￥49.90</p></div>
+                    <div class="jianshu">
+                        <ul>
+                            <li class="left">-</li>
+                            <li class="center">1</li>
+                            <li class="right">+</li>
+                        </ul>
+                    </div>
+                    <div class="jine">￥49.90</div>
+                    <div class="caozuo">
+                        <ul>
+                            <li>移入收藏夹</li>
+                            <li>删除</li>
+                            <li>相似宝贝</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+
+
+                <div class="dianpu1">
+                    <label></label>&nbsp;&nbsp;
+                    <img width="16px" height="16px" src="../img/购物车2.png" alt="">&nbsp;&nbsp;
+                    <span class="wenzi">
+                        店铺： 一封信JK
+                    </span>
+                    <a class="xiaolan" href="#"></a>
+                </div>
+                <div class="dianpu11">
+                    <label></label>&nbsp;&nbsp;
+                    <div>
+                        <img  id="before"src="https://img.alicdn.com/bao/uploaded/i1/1870984909/O1CN01W2D5eL1m8MvJ7Y64P_!!1870984909.jpg_80x80.jpg" alt="">
+                        <img id="yiru"src="https://img.alicdn.com/bao/uploaded/i1/1870984909/O1CN01W2D5eL1m8MvJ7Y64P_!!1870984909.jpg_240x240.jpg" alt="">       
+                        <span id="little"></span>  
+                    </div>
+                    <div class="jieshao">
+                        <span>【一封信JK】原创JK格裙【小夜曲】暗黑银线格裙【现货三天内</span>
+                        <img src="//assets.alicdn.com/sys/common/icon/trade/xcard.png" alt="">
+                        <img src="//img.alicdn.com/tps/i3/T1Vyl6FCBlXXaSQP_X-16-16.png" alt="">
+                    </div>
+                    <div class="color">颜色分类：【小夜曲】45cm+领带<br>
+                        尺码：S
+                        <img width="16px" height="16px" src="../img/修改.png" alt="">
+                        <a href="#">&nbsp;修改</a>
+                    </div>
+                    <div class="danjia" style="font-weight: bold; font-family: Verdana,Tahoma,arial;">￥98.00</div>
+                    <div class="jianshu">
+                        <ul>
+                            <li class="left">-</li>
+                            <li class="center">1</li>
+                            <li class="right">+</li>
+                        </ul>
+                    </div>
+                    <div class="jine">￥49.90</div>
+                    <div class="caozuo">
+                        <ul>
+                            <li>移入收藏夹</li>
+                            <li>删除</li>
+                            <li>相似宝贝</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+
+                <div class="dianpu1">
+                    <label></label>&nbsp;&nbsp;
+                    <span class="wenzi">
+                        店铺： 欧若依女装店
+                    </span>
+                    <a class="xiaolan" href="#"></a>
+                </div>
+                <div class="dianpu11">
+                    <label></label>&nbsp;&nbsp;
+                    <div>
+                        <img  id="before" src="https://img.alicdn.com/bao/uploaded/i4/2201496085332/O1CN01Nq5BpZ1pG6VJXOIh8_!!2201496085332.jpg_80x80.jpg" alt="">
+                        <img  id="yiru"src="https://img.alicdn.com/bao/uploaded/i4/2201496085332/O1CN01Nq5BpZ1pG6VJXOIh8_!!2201496085332.jpg_240x240.jpg" alt="">
+                        <span id="little"></span>  
+                    </div>
+                    <div class="jieshao">
+                        <span>不一样闺蜜套装姐妹装法式初恋甜美连衣裙女夏季又a又飒裙子ins风</span>
+                        <img src="//assets.alicdn.com/sys/common/icon/trade/xcard.png" alt="">
+                        <img src="//img.alicdn.com/tps/i3/T1bnR4XEBhXXcQVo..-14-16.png" alt="">
+                        <img src="//img.alicdn.com/tps/i4/T1BCidFrNlXXaSQP_X-16-16.png" alt="">
+                    </div>
+                    <div class="color">颜色分类：白色连衣裙<br>
+                        尺码：均码[80-110斤]
+                        <img width="16px" height="16px" src="../img/修改.png" alt="">
+                        <a href="#">&nbsp;修改</a>
+                    </div>
+                    <div class="danjia"><p id="shanchu">￥178.80</p><br><p id="xianjia">￥78.80</p></div>
+                    <div class="jianshu">
+                        <ul>
+                            <li class="left"><a href="#"></a>-</li>
+                            <li class="center">1</li>
+                            <li class="right"><a href="#"></a>+</li>
+                        </ul>
+                    </div>
+                    <div class="jine">￥78.80</div>
+                    <div class="caozuo">
+                        <ul>
+                            <li>移入收藏夹</li>
+                            <li>删除</li>
+                            <li>相似宝贝</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="lunbo clearfix">
+                <ul class="remai">
+                   <li><a href="#">掌柜热卖</a></li>
+                   <li class="xian"></li>
+                   <li><a href="#">最近收藏的</a></li>
+                   <li class="xian"></li>
+                   <li><a href="#">最近浏览过的</a></li>
+                   <li class="xian"></li>
+                   <li><a href="#">猜你喜欢的</a></li>
+                    <li class="red-strip"></li>
+                </ul>
+                <br><br>
+                <input type="radio" name="button" id="button1"checked hidden>
+                <label for="button1" id="button1"></label>
+
+                <input type="radio" name="button" id="button2" hidden>
+                <label for="button2"></label>
+
+                <input type="radio" name="button" id="button3" hidden>
+                <label for="button3"></label>
+
+                <input type="radio" name="button" id="button4" hidden>
+                <label for="button4"></label>
+
+                <input type="radio" name="button" id="button5" hidden>
+                <label for="button5"></label>
+                <ul class="li1">
+
+                    <li><a href="#"><img src="https://gma.alicdn.com/bao/uploaded/i4/14783206/O1CN01CsZQ5I1ZYOSzMIpVE_!!0-saturn_solar.jpg_350x350.jpg" alt=""></a>
+                        <div class="xianjia">￥85.00 <span class="yuanjia">￥158</span></div>
+                        <div class="dianming">一家不会撞衫的店 全村的希望</div>
+                        <div class="xiao">销量：1055
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <img src="../img/购物车1.png" style="width: 18px; height: 20px;" alt="">
+                            <img src="../img/xiajixinpin.png" style="height: 18px; width: auto;" alt="">
+                        </div>
+                        
+                    </li>
+                    <li><a href="#"><img src="https://gma.alicdn.com/bao/uploaded/i4/1030750032/O1CN01xgeT2Y1C6hMR1hTBB_!!0-saturn_solar.jpg_350x350.jpg" alt=""></a>
+                        <div class="xianjia">￥9.90<span class="yuanjia">￥19</span></div>
+                        <div class="dianming">AKF270遮瑕刷170粉底刷化妆刷软毛不吃</div>
+                        <div class="xiao">销量：90783
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <img src="../img/购物车1.png" style="width: 18px; height: 20px;" alt="">
+                            <img src="../img/remaibaobei.png" style="height: 18px; width: auto;" alt="">
+
+                        </div>
+                        
+                    </li>
+                    <li><a href="#"><img src="https://img.alicdn.com/bao/uploaded/i4/67295113/O1CN01MgwNML1ndnfa7aV8K_!!0-saturn_solar.jpg_350x350.jpg" alt=""></a>
+                        <div class="xianjia">￥36.90<span class="yuanjia">￥72</span></div>
+                        <div class="dianming">安安金纯橄榄油滋养倍润补水霜保湿官方</div>
+                        <div class="xiao">销量：72
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <img src="../img/购物车1.png" style="width: 18px; height: 20px;" alt="">
+                            <img src="../img/chongliangcuxiao.png" style="height: 18px; width: auto;" alt="">
+
+                        </div>
+                    </li>
+                    <li><a href="#"><img src="https://g-search1.alicdn.com/img/bao/uploaded/i4/imgextra/i1/116811916/O1CN01ggOjrT1Q1ZY5ckVVd_!!0-saturn_solar.jpg_460x460Q90.jpg" alt=""></a>
+                        <div class="xianjia">￥89<span class="yuanjia">￥109</span></div>
+                        <div class="dianming">透蜜清洁面膜水光精华泥膜涂抹式深层清</div>
+                        <div class="xiao">销量：21
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <img src="../img/购物车1.png" style="width: 18px; height: 20px;" alt="">
+                            <img src="../img/juhuasuan.png" style="height: 18px; width: auto;" alt="">
+
+                        </div>
+                    
+                    </li>
+                
+                
+                </ul>
+
+                <ul class="li2">
+                    <li><a href="#"><img src="https://gma.alicdn.com/bao/uploaded/i3/13353779/O1CN01f17FiD1dmpQ66tFMy_!!0-saturn_solar.jpg_350x350.jpg" alt=""></a>
+                        <div class="xianjia">￥159.90<span class="yuanjia">￥559</span></div>
+                        <div class="dianming">御泥坊耀白淡斑精华面膜组合美白补水保</div>
+                        <div class="xiao">销量：5431
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <img src="../img/购物车1.png" style="width: 18px; height: 20px;" alt="">
+                            <img src="../img/juhuasuan.png" style="height: 18px; width: auto;" alt="">
+
+                        </div>
+                        
+                        </li>
+                        <li><a href="#"><img src="https://img.alicdn.com/bao/uploaded/i2/113368126/O1CN019MiYac29tl5t2RpaG_!!0-saturn_solar.jpg_350x350.jpg" alt=""></a>
+                            <div class="xianjia">￥8.80<span class="yuanjia">￥24</span></div>
+                            <div class="dianming">日本贝印睫毛夹小型便携式迷你持久局部</div>
+                            <div class="xiao">销量：123
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <img src="../img/购物车1.png" style="width: 18px; height: 20px;" alt="">
+                                <img src="../img/jingpintehui.png" style="height: 18px; width: auto;" alt="">
+    
+                            </div>
+                            
+                        </li>
+                        <li><a href="#"><img src="https://gma.alicdn.com/bao/uploaded/i4/13353779/O1CN01QJ0AQc1dmpQ9iLJf0_!!0-saturn_solar.jpg_350x350.jpg" alt=""></a>
+                            <div class="xianjia">￥129.90<span class="yuanjia">￥419</span></div>
+                            <div class="dianming">明星推荐御泥坊美白淡斑面膜补水保湿</div>
+                            <div class="xiao">销量：72
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <img src="../img/购物车1.png" style="width: 18px; height: 20px;" alt="">
+                                <img src="../img/xiajixinpin.png" style="height: 18px; width: auto;" alt="">
+    
+    
+                            </div>
+                        </li>
+                        <li><a href="#"><img src="https://gma.alicdn.com/bao/uploaded/i2/67295113/O1CN01RKRBFR1ndnlvvD4Ek_!!0-saturn_solar.jpg_350x350.jpg" alt=""></a>
+                            <div class="xianjia">￥24.00<span class="yuanjia">￥54</span></div>
+                            <div class="dianming">(买1送4)安安金纯薰衣草沐浴露 持久留香</div>
+                            <div class="xiao">销量：21
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <img src="../img/购物车1.png" style="width: 18px; height: 20px;" alt="">
+                                <img src="../img/remaibaobei.png" style="height: 18px; width: auto;" alt="">
+    
+    
+                            </div>
+                        
+                        </li>
+                </ul>
+
+                <ul class="li3">
+                    <li><a href="#"><img src="https://gma.alicdn.com/bao/uploaded/i1/58592559/O1CN013J85oq1Um49tuoHvm_!!0-saturn_solar.jpg_350x350.jpg" alt=""></a>
+                        <div class="xianjia">￥79.90<span class="yuanjia">￥216</span></div>
+                        <div class="dianming">珀莱雅粉底液遮瑕保湿持久控油女干皮油</div>
+                        <div class="xiao">销量：21546
+                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <img src="../img/购物车1.png" style="width: 18px; height: 20px;" alt="">
+                            <img src="../img/remaibaobei.png" style="height: 18px; width: auto;" alt="">
+
+
+                        </div>
+                        
+                        </li>
+                        <li id="teshu"><a href="#"><img src="https://gma.alicdn.com/bao/uploaded/i4/1030750032/O1CN01xgeT2Y1C6hMR1hTBB_!!0-saturn_solar.jpg_350x350.jpg" alt=""></a>
+                            <div class="xianjia">￥79.00<span class="yuanjia">￥99</span></div>
+                            <div class="dianming">[刘宇同款] Mistine蜜丝婷小蓝盾粉底液</div>
+                            <div class="xiao">销量：26409
+                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <img src="../img/购物车1.png" style="width: 18px; height: 20px;" alt="">
+                                <img src="../img/juhuasuan.png" style="height: 18px; width: auto;" alt="">
+    
+    
+                            </div>
+                            
+                        </li>
+                        <li ><a href="#"><img src="https://img.alicdn.com/bao/uploaded/i4/67295113/O1CN01MgwNML1ndnfa7aV8K_!!0-saturn_solar.jpg_350x350.jpg" alt=""></a>
+                            <div class="xianjia">￥59.90<span class="yuanjia">￥68</span></div>
+                            <div class="dianming">拒绝粗糙鸡皮,洗出光滑美肌。</div>
+                            <div class="xiao">销量：72
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <img src="../img/购物车1.png" style="width: 18px; height: 20px;" alt="">
+                                <img src="../img/jingpintehui.png" style="height: 18px; width: auto;" alt="">
+    
+    
+                            </div>
+                        </li>
+                        <li><a href="#"><img src="https://gma.alicdn.com/bao/uploaded/i4/107351946/O1CN01YsM0lU1QFJPDJWgw5_!!0-saturn_solar.jpg_350x350.jpg" alt=""></a>
+                            <div class="xianjia">￥32<span class="yuanjia">￥120</span></div>
+                            <div class="dianming">百雀羚小雀幸面膜10片装女补水保湿深层</div>
+                            <div class="xiao">销量：88
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <img src="../img/购物车1.png" style="width: 18px; height: 20px;" alt="">
+                                <img src="../img/chongliangcuxiao.png" style="height: 18px; width: auto;" alt="">
+    
+    
+                            </div>
+                        
+                        </li>
+
+                </ul>
+
+                <ul class="li4">
+                    <li><a href="#"><img src="https://gma.alicdn.com/bao/uploaded/i2/1593680011/O1CN01HTZQt31Bx52bERuMM_!!0-saturn_solar.jpg_350x350.jpg" alt=""></a>
+                        <div class="xianjia">￥19.90<span class="yuanjia">￥29</span></div>
+                        <div class="dianming">云胡不喜太阳花睫毛夹网红神器小型卷翘</div>
+                        <div class="xiao">销量：1055
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <img src="../img/购物车1.png" style="width: 18px; height: 20px;" alt="">
+                            <img src="../img/juhuasuan.png" style="height: 18px; width: auto;" alt="">
+
+
+                        </div>
+                        
+                        </li>
+                        <li><a href="#"><img src="https://gma.alicdn.com/bao/uploaded/i4/1870040122/O1CN01ojldFU1Clv0DwDqc8_!!0-saturn_solar.jpg_350x350.jpg" alt=""></a>
+                            <div class="xianjia">￥138.00<span class="yuanjia">￥258</span></div>
+                            <div class="dianming">日本HFCOS禾芙蔻抹茶深层清洁泥膜去黑</div>
+                            <div class="xiao">销量：247
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <img src="../img/购物车1.png" style="width: 18px; height: 20px;" alt="">
+                                <img src="../img/chongliangcuxiao.png" style="height: 18px; width: auto;" alt="">
+    
+    
+                            </div>
+                            
+                        </li>
+                        <li><a href="#"><img src="https://gma.alicdn.com/bao/uploaded/i2/836190143/O1CN01kNS7vI1CvXJluLDqY_!!0-saturn_solar.jpg_350x350.jpg" alt=""></a>
+                            <div class="xianjia">￥85.00<span class="yuanjia">￥105</span></div>
+                            <div class="dianming">蒸汽眼罩热敷养神,温润滋养双眼</div>
+                            <div class="xiao">销量：1459
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <img src="../img/购物车1.png" style="width: 18px; height: 20px;" alt="">
+                                <img src="../img/remaibaobei.png" style="height: 18px; width: auto;" alt="">
+    
+    
+                            </div>
+                        </li>
+                        <li><a href="#"><img src="https://img.alicdn.com/bao/uploaded/i4/1402010196/O1CN014kjpqd1DJoJHJnW64_!!0-saturn_solar.jpg_350x350.jpg" alt=""></a>
+                            <div class="xianjia">￥39.70<span class="yuanjia">￥98</span></div>
+                            <div class="dianming">屈臣氏去鸡皮肤身体磨砂膏净透丝滑沐浴</div>
+                            <div class="xiao">销量：1620
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <img src="../img/购物车1.png" style="width: 18px; height: 20px;" alt="">
+                                <img src="../img/xiajixinpin.png" style="height: 18px; width: auto;" alt="">
+    
+    
+                            </div>
+                        
+                        </li>
+
+                </ul>
+
+
+                <ul class="li5">
+                    <li><a href="#"><img src="https://gma.alicdn.com/bao/uploaded/i1/122266854/O1CN01Zpk5O220VBK5CKIPv_!!0-saturn_solar.jpg_350x350.jpg" alt=""></a>
+                        <div class="xianjia">￥46.90<span class="yuanjia">￥138</span></div>
+                        <div class="dianming">半亩花田乳木果磨砂膏身体去角质去死皮</div>
+                        <div class="xiao">销量：0
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <img src="../img/购物车1.png" style="width: 18px; height: 20px;" alt="">
+                            <img src="../img/chongliangcuxiao.png" style="height: 18px; width: auto;" alt="">
+
+
+                        </div>
+                        
+                        </li>
+                        <li><a href="#"><img src="https://img.alicdn.com/bao/uploaded/i1/54309019/O1CN01egF0fc2GUkfDGQwDF_!!54309019.jpg_350x350.jpg" alt=""></a>
+                            <div class="xianjia">￥14.90<span class="yuanjia">￥17</span></div>
+                            <div class="dianming">烟酰胺身体磨砂膏去鸡皮肤嫩白全身小黄</div>
+                            <div class="xiao">销量：2541
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <img src="../img/购物车1.png" style="width: 18px; height: 20px;" alt="">
+                                <img src="../img/juhuasuan.png" style="height: 18px; width: auto;" alt="">
+    
+    
+                            </div>
+                            
+                        </li>
+                        <li><a href="#"><img src="https://gma.alicdn.com/bao/uploaded/i2/490210196/O1CN017OwSlO1DJoJjHDgBb_!!0-saturn_solar.jpg_350x350.jpg" alt=""></a>
+                            <div class="xianjia">￥25.80<span class="yuanjia">￥36</span></div>
+                            <div class="dianming">田园主义高纤全麦饼干低无糖精魔芋粗粮</div>
+                            <div class="xiao">销量：21017
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <img src="../img/购物车1.png" style="width: 18px; height: 20px;" alt="">
+                                <img src="../img/jingpintehui.png" style="height: 18px; width: auto;" alt="">
+    
+    
+                            </div>
+                        </li>
+                        <li><a href="#"><img src="https://gma.alicdn.com/bao/uploaded/i2/116289870/O1CN01J4gzIv2MmVrCW8WtB_!!0-saturn_solar.jpg_350x350.jpg" alt=""></a>
+                            <div class="xianjia">￥99.90<span class="yuanjia">￥229</span></div>
+                            <div class="dianming">德国科蒂斯电动牙刷全自动成人声波软毛</div>
+                            <div class="xiao">销量：2745
+                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <img src="../img/购物车1.png" style="width: 18px; height: 20px;" alt="">
+                                <img src="../img/xiajixinpin.png" style="height: 18px; width: auto;" alt="">
+    
+    
+                            </div>
+                        </li>
+                </ul>
+
+
+            </div>
+
+
+        </div>
+
+
+        
+    </div>
+    <div class="end">
+        <div class="c1">
+        <a href="#">阿里巴巴集团</a>
+          <span>|</span>
+          <a href="#">淘宝网</a>
+          <span>|</span>
+          <a href="#">天猫</a>
+          <span>|</span>
+          <a href="#">聚划算</a>
+          <span>|</span>
+          <a href="#">全球速卖通</a>
+          <span>|</span>
+          <a href="#">阿里巴巴国际交易市场</a>
+          <span>|</span>
+          <a href="#">1688</a>
+          <span>|</span>
+          <a href="#">阿里妈妈</a>
+          <span>|</span>
+          <a href="#">飞猪</a>
+          <span>|</span>
+          <a href="#">阿里云计算</a>
+          <span>|</span>
+          <a href="#">AliOS</a>
+          <span>|</span>
+          <a href="#">阿里通信</a>
+          <span>|</span>
+          <a href="#">一淘</a>
+          <span>|</span>
+          <a href="#">万网</a>
+          <span>|</span>
+          <a href="#">高德</a>
+          <span>|</span>
+          <a href="#">UC</a>
+          <span>|</span>
+          <a href="#">友盟</a>
+          <span>|</span>
+          <a href="#">阿里安全</a>
+          <div class="c2">
+              <a href="#">大麦网</a>
+                <span>|</span>
+                <a href="#">钉钉</a>
+                <span>|</span>
+                <a href="#">支付宝</a>
+                <span>|</span>
+                <a href="#">优酷</a>
+                <span>|</span>
+                <a href="#">土豆</a>
+                <span>|</span>
+                <a href="#">阿里健康</a>
+                <span>|</span>
+                <a href="#">阿里影业</a>
+                <span>|</span>
+                <a href="#">阿里体育</a>
+                <span>|</span>
+                <a href="#">网商银行</a>
+          </div>
+        </div>
+        <div class="c9">
+            <a href="#">关于天猫</a>
+                    <a href="#">商家服务大厅</a>
+                    <a href="#">开放平台</a>
+                    <a href="#">诚聘英才</a>
+                    <a href="#">联系我们</a>
+                    <a href="#">网站合作</a>
+                    <a href="#">法律声明</a>
+                    <a href="#">隐私权政策</a>
+                    <a href="#">知识产权</a>
+        </div>
+        <div class="c3">
+                    <a href="#">增值电信业务经营许可证：浙B2-20110446</a>
+                    <span>市场名称登记证：工商网市字3301004119号</span>
+                    <span>出版物网络交易平台服务经营备案证： 新出发浙备字第2019002号</span>
+                </div>
+                <div class="c4">
+                    <span>互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</span>
+                    <span>互联网药品信息服务资质证书编号：
+                        <a href="#">浙-（经营性）-2017-0005</a>
+                    </span>
+                    <span> 
+                        <img src="//img.alicdn.com/tps/TB1yEqRPXXXXXXPXpXXXXXXXXXX-20-20.png" style="position:relative;top:5px;vertical-align:baseline;" data-spm-anchor-id="a2240.7829288.a2226n1.i2.1c364fe5U9vQS2">
+                        浙公网安备 33010002000120号</span>
+                </div>
+                <div class="c5">
+                    <span>医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00002号</span>
+                </div>
+                <div class="c6">
+                    <span>浙江省网络食品销售第三方平台提供者备案：浙网食A33010002</span>
+                    <span class="special">12318举报</span>
+                    <span class="special">浙B2-20110446-1</span>
+                </div>
+                <div class="c7">
+                    <span class="special">© 2003-2020 TMALL.COM 版权所有</span>
+                </div>
+
+    </div>
+    <div class="youce">
+        <a href="#">
+            <i class="iconfont icon-tubiao02"></i>
+            <div>回到<br>顶部</div>
+        </a>
+        <a href="#">
+            <i class="iconfont icon-fankui"></i>
+            <div>我要<br>反馈</div>
+        </a>
+    </div>
+    <div class="bottom">
+        <label></label>
+        <span>&nbsp;全选</span>
+        <a id="bian" href="#">删除</a>
+        <a id="bian" href="#">移入收藏夹</a>
+        <span class="r1">已选商品<span>0</span>件</span>
+        <a class="r">合计（不含运费）：<span>0.00</span></a>
+        <a class="r2">结&nbsp;算</a>
+    </div>
+
+</body>
+</html>

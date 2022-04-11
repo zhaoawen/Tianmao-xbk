@@ -1,0 +1,1797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>已买到的宝贝</title>
+    <link rel="stylesheet" href="../大一下/已买到的宝贝.css">
+    <link rel="stylesheet" href="../source/chongzhi.css">
+    <link rel="stylesheet" href="../layout/css/all.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2620486_x9th9g8j4rc.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2636304_a28kmgcqfjw.css">
+
+</head>
+<style>
+    .clearfix::before,.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+} 
+.top-head{
+    width: 100%;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #eee;
+}
+.top a{
+    color: #6c6c6c;
+}
+.top{
+    padding-left: 10px;
+    font-size: 12px;
+    width:1215.33px ;
+    height: 36px;
+    margin: 0 auto;
+}
+.top li{
+    float: left;
+    /* width: 12px; */
+    height: 36px;
+    line-height: 36px;
+    margin-right: 10px;
+}
+.top li:nth-child(1){
+    display: inline-block;
+    width: 98px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.iconfont{
+    color: #9c9c9c;
+}
+#chengse{
+    color: #ff4400;
+}
+.top a:hover{
+    color: #F40;
+}
+.l4:hover a,
+.l4:hover a i{
+    color: #ff4400;
+}
+.num{
+    font-weight: bold;
+}
+.l1{
+    margin-left: 222px;
+}
+.l2{
+    margin-left: 10px;
+}
+.l3{
+    margin-left: 10px;
+}
+a{
+    text-decoration: none;
+}
+.taobao-head{
+    width: 100%;
+    background-color: #ff4401;
+    height:60px;
+}
+.taobao{
+    width:1215.33px;
+    margin: 0 auto;
+    background-color:  #ff4401;
+    height: 60px;
+    vertical-align: middle;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+.taobao a img{
+    display: block;
+    height: 30px;
+
+}
+#disanjiao{
+    margin-left: 20px;
+    margin-right: 50px;
+}
+.taobao a{
+    margin-right:70px;
+    color: white;
+    font:400 14px/36px tahoma;
+}
+.taobao::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    border: 8px solid transparent;
+    border-bottom: none;
+    border-top-color: white;
+    z-index: 3;
+    margin: auto;
+    left: 245px;
+    top: 53px;
+    transition: all .2s;
+    transform: rotate(180deg);
+}
+.taobao input{
+    width: 300px;
+    height: 23px;
+    outline: none;
+    border:1px solid #f40;
+    margin-left: 400px;
+}
+.taobao button{
+    width: 65px;
+    outline: none;
+    border:1px solid #dad6d6;
+    border-top: none;
+    height: 26.5px;
+    color: #666666;
+    margin-left: -60px;
+}
+.center-head{
+    width: 100%;
+    height: 920px;
+    background-color: white;
+}
+.center{
+    margin: 0 auto;
+    width:1215.33px;
+    height: 100%;
+}
+.l{
+    float: left;
+    width: 115px;
+    height: 100%;
+    background-color: white;
+    margin-top: 30px;
+    margin-left: 120px;
+}
+.l li{
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom:8px;
+}
+.l li img{
+    height: 13px;
+    line-height:13px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.l li a{
+    color: #000;
+}
+.l li a:hover{
+    color: #f40;
+}
+.r{
+    position: relative;
+    margin-top: 50px;
+    float: left;
+}
+.r li{
+    float: left;
+    display: flex;
+    margin-left: 20px;
+    justify-content: center;
+}
+.r li a{
+    color: #000;
+    font-weight: 700;
+}
+#xian{
+    color: #E8E8E8;
+}
+.right{
+    margin-left: 225px!important;
+}
+.right a{
+    color: #6c6c6c;
+    font-weight: 400!important;
+}
+.r{
+    padding-bottom: 10px;
+    border-bottom: 2px #E8E8E8 solid;
+}
+.red-strip{
+    width: 90px;
+    height: 2px;
+    position: absolute;
+    top: 30px;
+    left: -19px;
+    background-color: #f40;
+}
+.top-nav li a:hover{
+    color: #f40;
+}
+.right:hover a{
+    color: #f40!important;
+}
+.sou{
+    padding-top: 100px;
+}
+#sou{
+    text-indent: 8px;
+    border: 1px solid #d6d3d3;
+    width: 230px;
+    height: 22px;
+}
+.sou button{
+    border: #d6d3d3 1px solid;
+    margin-left: -5px;
+    height: 26px;
+}
+i{
+    width: 5px;
+}
+.sou span:hover{
+    cursor: pointer;
+}
+.nav ul{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    height: 38px;
+    width: 860px;
+    border: 1px solid#e0e0e0;
+    background-color: #F5F5F5;
+}
+.nav{
+    float: left;
+}
+.nav li:nth-child(1){
+    margin-left: 150px;
+    margin-right: 190px;
+}
+.nav li{
+    font-size: 12px;
+    color: #3c3c3c;
+    float: left;
+    margin-right: 40px;
+}
+.nav li:last-child{
+    margin-right: 0px;
+}
+.nav li a{
+    position: relative;
+    color: #666;
+}
+.nav .l1{
+    margin-left: 12px;
+}
+.nav .l1 a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    border: 5px solid transparent;
+    border-bottom: none;
+    border-top-color: #999;
+    z-index: 3;
+    top: 6px;
+    left: 55px;
+    margin: auto;
+    transition: all .2s;
+    transform: rotate(0deg);
+}
+.anniu span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    width: 50px;
+    height: 20px;
+    float: right;
+    border-radius: 2px;
+    margin: 10px 3px;
+    margin-left: 5px;
+    border: 1px #DCDCDC solid;
+}
+.dianpu{
+    float: left;
+    width: 865px;
+    height: 242px;
+    background-color: white;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.dianpu-top label{
+    margin-top:7px;
+    position: relative;
+    margin-left: 20px;
+    z-index: 9;
+    float: left;
+    width: 10px;
+    height: 10px;
+    line-height: 200em;
+    overflow: hidden;
+    border-radius: 2px;
+    cursor: pointer;
+    border: 2px solid #CCCCCC;
+}
+.dianpu-top{
+    padding-top: 10px;
+    height: 32px;
+    align-items: center;
+    background-color: #F1F1F1;
+}
+.dianpu-top a{
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+    background-image: url(//img.alicdn.com/tps/i1/T15AD7FFFaXXbJnvQ_-130-60.gif);
+    background-image: -webkit-image-set(url(//img.alicdn.com/tps/i1/T15AD7FFFaXXbJnvQ_-130-60.gif) 1x,url(//img.alicdn.com/tps/i4/T1Rsz7FPJaXXbZhKn7-520-240.gif) 4x);
+}
+.dianpu-top img{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 45px;
+}
+.dianpu-top a{
+    margin-left: 45px;
+    margin-right: 180px;
+}
+.dianpu i{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.icon-shanchu1{
+    margin-right: 10px;
+}
+.icon-shangchuan,
+.icon-qizhi{
+    visibility: hidden;
+}
+.dianpu:hover .icon-qizhi,
+.dianpu:hover .icon-shangchuan{
+    visibility: visible;
+}
+.dianpu{
+    border: 1px solid #ECECEC;
+    /* border: 1px solid transparent; */
+}
+.dianpu:hover{
+    padding-bottom: -1px;
+    border: 1px solid rgb(184, 181, 181);
+}
+.w1{
+    float: left;
+    padding-right: 0px;
+    border: #ECECEC 1px solid;
+    border-right: none;
+    padding-top: 20px;
+    height: 130px;
+    width: 570px;
+}
+.c1,.c2,.c3,.c4,.c5{
+    float: left;
+    font: 12px/1.5 tahoma,arial,Hiragino Sans GB,\\5B8B\4F53,sans-serif;
+}
+.c1{
+    margin-left: 20px;
+}
+.c2{
+    width: 220px;
+    margin-left: 15px;
+    margin-right: 20px;
+    font: 12px/1.5 tahoma,arial,Hiragino Sans GB,\\5B8B\4F53,sans-serif;
+}
+.c2 img{
+    margin-top: 10px;
+}
+.c3{
+    width: 86px;
+}
+.c4{
+    margin-right:20px;
+}
+.c5{
+    margin-left: 20px;
+}
+.c5 a{
+    color: black;
+}
+.shanchu{
+    text-decoration: line-through;
+}
+.w2{
+    float: left;
+    height: 198px;
+    width: 100px;
+    border: 1px solid #ECECEC;
+}
+.s1{
+    display: block;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+.s2{
+    color: #6C6C6C;
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.s3{
+    padding-left: 25px;
+    
+}
+.s3 img{
+    cursor: pointer;
+}
+.w3{
+    float: left;
+    width: 90px;
+    height: 178px;
+    border: 1px solid #ECECEC;
+    border-left: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.w3 li a{
+    font: 12px/1.5 tahoma,arial,Hiragino Sans GB,\\5B8B\4F53,sans-serif;
+    color: #333;
+}
+.w4{
+    float: right;
+    height: 198.5px;
+    padding-left: 11.3px;
+    border: 1px solid #ECECEC;
+    border-left: none;
+}
+.pingjia{
+    margin-right: 25px;
+    margin-top: 20px;
+    height:25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px #DCDCDC solid;
+    width: 50px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.pingjia:hover{
+    color: #f40;
+    border: 1px #f40 solid;
+}
+.kaipiao{
+    margin-right: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.dianpu a:hover{
+    color: #f40;
+}
+.kaipiao:hover{
+    color: #f40;
+
+}
+
+.dianpu{
+    position:relative;
+}
+.w5{
+    display: block;
+    position: absolute;
+    width: 569px;
+    height: 48px;
+    top: 193px;
+    border: 1px solid#ECECEC;
+    border-right:none ;
+    border-top: none;
+    left: 0px;
+}
+.w5 a{
+    display: inline-block;
+    margin-left:30px;
+    margin-top: 17px;
+    margin-right: 250px;
+    color: #000;
+}
+.shang:hover{
+    cursor: no-drop;
+}
+.xiayiye:hover{
+    color: #f40;
+    border: #f40 1px solid;
+    cursor: pointer;
+}
+.mingzi{
+    display: inline-block;
+    cursor: pointer;
+    width: 135px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.mingzi:hover{
+    color: #f40;
+    cursor: pointer;
+}
+.c1{
+    cursor: pointer;
+}
+.jiaoyi{
+    color: #000;
+}
+.jiaoyi:hover{
+    cursor: pointer;
+    color: #f40;
+}
+a{
+    cursor: pointer;
+}
+.c2 img{
+    cursor: pointer;
+}
+.fanye{
+    width: 390px;
+    height: 20px;
+    float: right;
+}
+.fanye span{
+    display: block;
+    width: 35px;
+    height: 30px;
+    float: left;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin-left: 9px;
+    border: 1px solid #d9d9d9;
+}
+.chang{
+    background-color: #f40;
+}
+
+.f1:hover{
+    color: #f40;
+    border: 1px #f40 solid;
+    cursor: pointer;
+}
+.jingzhi:hover{
+    border: 1px #d9d9d9 solid;
+    cursor: no-drop;
+    
+}
+.lunbo-head{
+    height: 700px;
+    position: relative;
+}
+.lunbo{
+    overflow: hidden;
+    width: 1010px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.remai{
+    margin: 0 auto;
+    height: 30px;
+    margin-top: 40px;
+    border-bottom:2px solid #e6e6ee;
+}
+.lunbo .remai li{
+    float: left;
+    margin-left: 10px;
+}
+.lunbo .remai li:first-child{
+    margin-top: -6px;
+    margin-right: 65px;
+}
+.lunbo .remai li a{
+    color: #000;
+    display: inline-block;
+    margin-top: 7px;
+}
+.lunbo .remai li a:hover{
+    color: #f40;
+}
+.lunbo .remai a{
+    font: 12px/1.5 tahoma,arial,"Hiragino Sans GB",微软雅黑,宋体,sans-serif;
+}
+.lunbo .red-strip{
+    width: 87px;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    top: 30px;
+    left: -10px;
+}
+.remai{
+    position: relative;
+}
+.q1 li,
+.q2 li,
+.q3 li,
+.q4 li,
+.q5 li,
+.q6 li{
+    float: left;
+    margin-top: 15px;
+    outline: 1px solid #e0e0e0;
+    margin-right: 20px;
+    padding: 10px;
+    height: 370px;
+}
+.bianse{
+    display: block;
+    width: 214px;
+    height: 80px;
+    margin-top: 10px;
+    color: white;
+}
+.q1 .bianse,
+.q6 .bianse{
+    background-color: #FF1E3B;
+}
+.q2 .bianse{
+    background-color: #FF8B00;
+}
+.q3 .bianse{
+    background-color:#FC307B ;
+}
+.q4 .bianse{
+    background-color: #9100FF;
+}
+.q5 .bianse{
+    background-color: #0069DB;
+}
+.q1 .jia,
+.q6 .jia{
+    color: #FF1E3B;
+}
+.q2 .jia{
+    color:  #FF8B00;
+}
+.q3 .jia{
+    color: #FC307B;
+}
+.q4 .jia{
+    color: #9100FF;
+}
+.q5 .jia{
+    color: #0069DB;
+}
+.q1 li:hover,
+.q6 li:hover{
+    outline: 2px solid #FF1E3B;
+    /* box-sizing: border-box!important; */
+}
+.q2 li:hover{
+    outline: 2px solid #FF8B00;
+    /* box-sizing: border-box!important; */
+}
+.q3 li:hover{
+    outline: 2px solid #FC307B;
+}
+.q4 li:hover{
+    outline: 2px solid #9100FF;
+}
+.q5 li:hover{
+    outline: 2px solid #0069DB;
+}
+.q1 li:last-child,
+.q2 li:last-child,
+.q3 li:last-child,
+.q4 li:last-child,
+.q5 li:last-child,
+.q6 li:last-child{
+    margin-right: 0px;
+}
+.q1 img,
+.q2 img,
+.q3 img,
+.q4 img,
+.q5 img,
+.q6 img{
+width: 15px;
+height: 15px;
+}
+.q1 a img,
+.q2 a img,
+.q3 a img,
+.q4 a img,
+.q5 a img,
+.q6 a img{
+    height: 210px;
+    width: 210px;
+}
+.big{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    height: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.small{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.jia{
+    font: 700 22px Verdana,Arial;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.jia span{
+    font-size: 12px;
+    font-weight: lighter;
+    color: #888;
+    float: right;
+}
+.slide{
+    overflow: hidden;
+    width: 7700px;
+    height: 450px;
+    transition: all .5s;
+}
+.slide-head{
+    
+            width: 1100px;
+            height: 450px;
+            text-align: center;
+            overflow: hidden;
+            margin: 15px auto;
+}
+.q1,.q2,.q3,.q4,.q5,.q6{
+    float: left;
+    margin-right: 10px;
+}
+.q1 li:first-child{
+    margin-left: 5px;
+}
+@keyframes bilbil{
+    0%,5%{
+        margin-left: 1px;
+    }
+    10%,25%{
+        margin-left: -1006px;
+    }
+    30%,45%{
+        margin-left: -2011px;
+    }
+    50%,65%{
+        margin-left: -3016px;
+    }
+    70%,85%{
+        margin-left: -4021px;
+    }
+    90%,100%{
+        margin-left: -5028.5px;
+    }
+}
+.slide{
+    animation: bilbil 10s ease-in-out infinite;
+}
+.a1{
+    margin-left: 41%;
+}
+#an{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #d1d1d1;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+#an:hover{
+    background-color: #f40;
+}
+.qian,
+.hou{
+    display:inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #d1d1d1;
+}
+.qian:hover,
+.hou:hover{
+    color: #f40;
+    border: 1px solid #f40;
+}
+.qian:hover i,
+.hou:hover i{
+    color: #f40;
+}
+.huan{
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #d1d1d1;
+    color: #979595;
+}
+.huan:hover{
+    color: #f40;
+    border: 1px solid #f40;
+}
+.end{
+    color:#6c6c6c ;
+    border-top: 1px solid  #e6e6ee;
+    padding-top: 15px;
+    width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+.b1 span{
+    color:  #e6e6ee;
+}
+.b2{
+    color: #e6e6ee;
+    border-bottom: 1px solid  #e6e6ee;
+    padding-bottom: 15px;
+    margin-top: 8px;
+}
+.b1 a,.b2 a{
+    color:#6c6c6c ;
+    margin-left: 1px;
+    margin-right: 4px;
+}
+.b9{
+    margin-top: 10px;
+}
+.b9 a{
+    margin-right: 12px;
+}
+.b1 a:hover,.c2 a:hover,.c9 a:hover{
+    color: #f40;
+}
+.b3 a,
+.b3 span{
+    margin-right: 6%;
+}
+.b3 a{
+    color:#6c6c6c ;
+}
+.b3 span{
+    color: #666;
+}
+.b3{
+    margin-top: 0.8%;
+}
+.b4 span{
+    color: #666;
+}
+.b5,.c6{
+    color: #666;
+}
+.b5,.c6,.c7{
+    margin-top: 0.3%;
+}
+.b6 span{
+    margin-right: 5%;
+}
+.end a{
+    font-size: 12px;
+    color: #666;
+    font:12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+.end{
+    font-size: 12px;
+    color: #666;
+    font:12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+
+body{
+    font:12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+.bee{
+    position: fixed;
+    top: 50%;
+    left: 90%;
+    font-size: 12px;
+}
+.z{
+    margin-left: -30px;
+    width: 120px;
+    height:90px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    border: 2px solid #F7931E;
+    box-shadow:3.5px 3.5px rgba(12, 11, 11, 0.1);
+}
+.e1{
+    margin-top: 10px;
+}
+.e1,.e2{
+    /* margin-top: 15px; */
+    height: 26px;
+}
+.bee li{
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: white; */
+}
+
+.e1,.e2 a{
+    display: inline-block;
+}
+.e1:hover,
+.e2:hover{
+    background-color: #f5e4be;
+}
+.e1 a,.e2 a{
+    color: #666;
+}
+.e3{
+    background-color: #F7931E;
+    color: white;
+    height: 29px;
+    line-height: 29px;
+}
+.e3 a{
+    color: white;
+}
+.e2{
+    background-color: #FFF8E8;
+}
+.bee .z{
+    margin-top: -2px;
+}
+</style>
+<body style="overflow:-Scroll;overflow-x:hidden">
+    <div class="top-head clearfix">
+        <ul class="top">
+            <li>
+                <a href="#">你似初阳我不及你的光</a>
+            </li>
+            <li><i class="iconfont icon-jiantou" style="font-size: 5px;"></i></li>
+            <li>
+                <a href="#">手机逛淘宝</a>
+            </li>
+            <li class="l1">
+                <a href="#">淘宝网首页</a>
+            </li>
+            <li class="l2">
+                <a href="#">我的淘宝 </a>
+                <i class="iconfont icon-jiantou"style="font-size: 5px;"></i>
+            </li>
+            <li   class="l3">
+                <i id="chengse" class="fas fa-shopping-cart" style="font-size: 5px;"> </i>
+                <a href="#"> &nbsp;&nbsp;购物车 <span id="chengse" class="num">4</span></a>
+                <i class="iconfont icon-jiantou"style="font-size: 5px;"></i>
+            </li>
+            <li class="l3 l4">
+                <a href="#">
+                    <i class="iconfont icon-star_full"style="font-size: 5px;"></i>
+                    收藏夹
+                </a>
+                <i class="iconfont icon-jiantou"style="font-size: 5px;"></i>
+            </li>
+            <li class="l3">
+                <a href="#">商品分类</a>
+            </li>
+            <li class="l3">
+                <a href="#">免费开店</a>
+            </li>
+            <li style="color: #9c9c9c;">|</li>
+            <li class="l3">
+                <a href="#">千牛卖家中心</a>
+                <i class="iconfont icon-jiantou"style="font-size: 5px;"></i>
+            </li>
+            <li class="l3">
+                <a href="#">联系客服</a>
+                <i class="iconfont icon-jiantou"style="font-size: 5px;"></i>
+            </li>
+            <li class="l3">
+                <a href="#">
+                    <i id="chengse" class="iconfont icon-daohang"style="font-size: 5px;"></i>
+                    网站导航</a>
+                <i class="iconfont icon-jiantou"style="font-size: 5px;"></i>
+            </li>
+        </ul>
+    </div>
+    <div class="taobao-head">
+        <div class="taobao">
+            <a href="#">
+                <img src="../img/我的淘宝.png" alt="">
+            </a>
+            <a id="disanjiao"href="#">首页</a>
+            <a href="#">账户设置
+                <i style="color: white;" class="iconfont icon-jiantou" style="font-size: 5px;"></i>
+            </a>
+            <input type="text">
+            <button style="color: #666666;">搜&nbsp;索</button>
+        </div>
+    </div>
+    <div class="center-head">
+        <div class="center">
+            <div class="l">
+                <ul>
+                    <li style="color: #f40; font-size: 16px;">全部功能</li>
+                    <li><a href="#">我的购物车</a></li>
+                    <li ><a href="#"style="color: #f40;">已买到的宝贝
+                        <img src="../img/箭头子.png" alt="">
+                    </a></li>
+                    <li><a href="#">&nbsp;&nbsp;我的拍卖</a></li>
+                    <li><a href="#">&nbsp;&nbsp;机票酒店保险</a></li>
+                    <li><a href="#">&nbsp;&nbsp;我的彩票</a></li>
+                    <li><a href="#">&nbsp;&nbsp;官方集运</a></li>
+                    <li><a href="#">购买过的店铺</a></li>
+                    <li><a href="#">我的发票
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../img/箭头子.png" alt="" style="transform: rotate(180deg);">
+                    </a></li>
+                    <li><a href="#">我的收藏</a></li>
+                    <li><a href="#">我的积分</a></li>
+                    <li><a href="#">我的优惠信息</a></li>
+                    <li><a href="#">评价管理</a></li>
+                    <li><a href="#">退款维权
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../img/箭头子.png" alt="" style="transform: rotate(180deg);">
+                    </a></li>
+                    <li><a href="#">我的足迹</a></li>
+                    <li><a href="#">流量钱包</a></li>
+
+
+
+                </ul>
+            </div> 
+            <div class="r">
+                <ul class="top-nav clearfix">
+                    <li><a href="#" style="color: #f40;">所有订单</a></li>
+                    <li id="xian">|</li>
+                    <li><a href="#">待付款</a></li>
+                    <li id="xian">|</li>
+                    <li><a href="#">待发货</a></li>
+                    <li id="xian">|</li>
+                    <li><a href="#">待收货</a></li>
+                    <li id="xian">|</li>
+                    <li><a href="#">待评价 <span style="font-weight: lighter; color: #f40;">2</span>
+                    </a></li>
+                    <li id="xian">|</li>
+                    <li><a href="#" style="font-size: 14px;">分阶段</a></li>
+                    <li class="right">
+                        <img  src="//img.alicdn.com/tps/i4/TB1G5QqIFXXXXbvXFXXcmA2.FXX-11-12.png" alt="订单回收站">
+                        <a href="#" style="color:#6c6c6c;font-size: 12px;">
+                        &nbsp;&nbsp;订单回收站
+                    </a></li>
+                    <li class="red-strip"></li>
+
+                </ul>
+            </div>
+            <div class="sou">
+                <input id="sou"type="sousuo" placeholder="输入商品标题或订单号进行搜索">
+                <button style="font-size: 12px;">&nbsp;&nbsp;订单搜索&nbsp;&nbsp;</button>
+                <span style="font-size: 12px;">&nbsp;更多筛选条件
+                    <i class="iconfont icon-jiantou"></i>
+                </span>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>宝贝</li>
+                    <li>单价</li>
+                    <li>数量</li>
+                    <li>商品操作</li>
+                    <li class="l1">实付款</li>
+                    <li class="l1 l2"><a href="#">交易状态</a></li>
+                    <li class="l1">交易操作</li>
+
+                </ul>
+                <div class="anniu">
+                   <span class="xiayiye">下一页</span> <span style="color: #b1aeae; " class="shang">上一页</span>
+                </div>
+            </div>
+
+            <div class="dianpu">
+                <div class="dianpu-top">
+                    <label for=""></label>
+                    <span style="font-weight: bold;">&nbsp;2021-06-19&nbsp;</span>
+                    <span>订单号：1884769776251153627</span>
+                    <span class="mingzi">
+                        <img src="//gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png">
+                        奥克斯亿艳朝旺专卖店
+                    </span>
+                    <a href="#"></a>
+                        <i class="iconfont icon-shangchuan"></i>
+                    <i class="iconfont icon-qizhi"></i>
+                    <i class="iconfont icon-shanchu1"></i>
+                </div>
+                <div class="w1 clearfix">
+                    <div class="c1">
+                        <img src="https://img.alicdn.com/imgextra/i4/2207629895384/O1CN01y6pian1pdv6RmB9eO_!!2207629895384.jpg_80x80.jpg" alt="">
+                    </div>
+                    <div class="c2">
+                        <a>【狂欢价】奥克斯眼部按摩仪器眼睛热敷护眼保仪缓解疲劳护眼仪智能眼罩神器</a>
+                        <br>
+                        <a class="jiaoyi" href="#">[交易快照]</a>
+                        <br>
+                        <a style="color: #9E9EB7;" href="#">颜色分类：升级款*】多频震动按摩+智能穴位按摩</a>
+                        <br>
+                        <img src="https://img.alicdn.com/tps/i2/T1SyeXFpliXXaSQP_X-16-16.png" alt="">
+                        <img src="https://img.alicdn.com/tps/TB1PDB6IVXXXXaVaXXXXXXXXXXX.png" alt="">
+                        <img src="https://img.alicdn.com/tps/i3/T1Vyl6FCBlXXaSQP_X-16-16.png" alt="">
+                        <img src="https://img.alicdn.com/tfs/TB1.MK5a.WF3KVjSZPhXXXclXXa-16-16.png" alt="">
+                    </div>
+                    <div class="c3">
+                        <div class="shanchu" style="color: #9E9EB7;">￥1299.00</div>
+                        <div class="xianjia">￥158.00</div>
+                    </div>
+                    <div class="c4">1</div>
+                    <div class="c5">
+                        <ul>
+                            <li><a href="#">&nbsp;&nbsp;&nbsp;申请售后</a></li>
+                            <li><a href="#">&nbsp;&nbsp;&nbsp;投诉商家</a></li>
+                            <li><a href="#">运费险已出单</a></li>
+                        </ul>
+                        
+                    </div>
+                    
+                
+                </div>
+                <span class="w2 clearfix">
+                    <span class="s1">￥47.72</span>
+                    <span class="s2">(含运费：￥0.00)</span>
+                    <span class="s3">
+                        <img src="https://img.alicdn.com/tps/i1/T1xRBqXdNAXXXXXXXX-46-16.png" alt="">
+                    </span>
+                </span>
+                <span class="w3 clearfix">
+                    <ul>
+                        <li><a href="#">交易成功</a></li>
+                        <li><a href="#">订单详情</a></li>
+                        <li><a href="#">花呗账单</a></li>
+                        <li><a href="#">查看物流</a></li>
+                    </ul>
+                </span>
+                <div class="w4 clearfix">
+                    <div class="pingjia">评价</div>
+                    <div class="kaipiao">申请开票</div>
+                </div>
+                <span class="w5 clearfix">
+                    <a href="#">保险服务</a>
+                    <span>￥0.00</span>
+                </span>
+                
+            </div>
+            <div class="dianpu">
+                <div class="dianpu-top">
+                    <label for=""></label><span style="font-weight: bold;">&nbsp;2021-06-19&nbsp;</span>
+                    <span>订单号：1886214639405153627</span>
+                    <span class="mingzi">
+                        <img src="//gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png">
+                        ukiss旗舰店</span>
+                    <a href="#"></a>
+                    <i class="iconfont icon-shangchuan"></i>
+                    <i class="iconfont icon-qizhi"></i>
+                    <i class="iconfont icon-shanchu1"></i>
+
+                </div>
+                    <div class="w1 clearfix">
+                        <div class="c1">
+                            <img src="https://img.alicdn.com/imgextra/i2/2414806177/O1CN015v4mGe1vV7BBQ4XzU_!!2414806177.jpg_80x80.jpg" alt="">
+                        </div>
+                        <div class="c2">
+                            <a>【狂欢价】UKISS睫毛打底膏防水纤长卷翘不晕染不脱妆定型液正品大牌雨衣女</a>
+                            <br>
+                            <a class="jiaoyi"  href="#">[交易快照]</a>
+                            <br>
+                            <a style="color: #9E9EB7;" href="#">颜色分类：自然黑</a>
+                            <br>
+                            <img src="https://img.alicdn.com/tps/i2/T1SyeXFpliXXaSQP_X-16-16.png" alt="">
+                            <img src="https://img.alicdn.com/tps/TB1PDB6IVXXXXaVaXXXXXXXXXXX.png" alt="">
+                            <img src="https://img.alicdn.com/tps/i3/T1Vyl6FCBlXXaSQP_X-16-16.png" alt="">
+                            <img src="https://img.alicdn.com/tfs/TB1.MK5a.WF3KVjSZPhXXXclXXa-16-16.png" alt="">
+                        </div>
+                        <div class="c3">
+                            <div class="shanchu" style="color: #9E9EB7;">￥98.00</div>
+                            <div class="xianjia">￥39.90</div>
+                        </div>
+                        <div class="c4">1</div>
+                        <div class="c5">
+                            <ul>
+                                <li><a href="#">&nbsp;&nbsp;&nbsp;申请售后</a></li>
+                                <li><a href="#">&nbsp;&nbsp;&nbsp;投诉商家</a></li>
+                                <li><a href="#">运费险已出单</a></li>
+                            </ul>
+                            
+                        </div>
+                        
+                    
+                    </div>
+                    <span class="w2">
+                        <span class="s1">￥24.90</span>
+                        <span class="s2">(含运费：￥0.00)</span>
+                        <span class="s3">
+                            <img src="https://img.alicdn.com/tps/i1/T1xRBqXdNAXXXXXXXX-46-16.png" alt="">
+                        </span>
+                    </span>
+                    <span class="w3">
+                        <ul>
+                            <li><a href="#">交易成功</a></li>
+                            <li><a href="#">订单详情</a></li>
+                            <li><a href="#">查看物流</a></li>
+                        </ul>
+                    </span>
+                    <div class="w4">
+                        <div class="pingjia">评价</div>
+                        <div class="kaipiao">申请开票</div>
+                    </div>
+                    <div class="w5">
+                        <a href="#">保险服务</a>
+                        <span>￥0.00</span>
+                    </div>
+                
+            
+            </div>
+            <div class="dianpu">
+                <div class="dianpu-top">
+                    <label for=""></label><span style="font-weight: bold;">&nbsp;2021-05-27&nbsp;</span>
+                    <span>订单号：1827330660680153627</span>
+                    <span class="mingzi">
+                        <img src="//gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png">
+                        丹姿化妆品旗舰店</span>
+                    <a href="#"></a>
+                    <i class="iconfont icon-shangchuan"></i>
+                    <i class="iconfont icon-qizhi"></i>
+                    <i class="iconfont icon-shanchu1"></i>
+
+                </div>
+                    <div class="w1 clearfix">
+                        <div class="c1">
+                            <img src="https://img.alicdn.com/imgextra/i4/681454821/O1CN01PieL0a1lU44w1AyYO_!!0-item_pic.jpg_80x80.jpg" alt="">
+                        </div>
+                        <div class="c2">
+                            <a>丹姿洗面奶女补水保湿美白深层清洁收缩毛孔控油祛痘男洁面乳学生</a>
+                            <br>
+                            <a class="jiaoyi"  href="#">[交易快照]</a>
+                            <br>
+                            <a style="color: #9E9EB7;" href="#">化妆品净含量：150g</a>
+                            <br>
+                            <img src="https://img.alicdn.com/tps/i2/T1SyeXFpliXXaSQP_X-16-16.png" alt="">
+                            <img src="https://img.alicdn.com/tps/TB1PDB6IVXXXXaVaXXXXXXXXXXX.png" alt="">
+                            <img src="https://img.alicdn.com/tps/i3/T1Vyl6FCBlXXaSQP_X-16-16.png" alt="">
+                            <img src="https://img.alicdn.com/tfs/TB1.MK5a.WF3KVjSZPhXXXclXXa-16-16.png" alt="">
+                        </div>
+                        <div class="c3">
+                            <div class="shanchu" style="color: #9E9EB7;">￥69.00</div>
+                            <div class="xianjia">￥28.90</div>
+                        </div>
+                        <div class="c4">1</div>
+                        <div class="c5">
+                            <ul>
+                                <li><a href="#">&nbsp;&nbsp;&nbsp;申请售后</a></li>
+                                <li><a href="#">运费险已出单</a></li>
+                            </ul>
+                            
+                        </div>
+                        
+                    
+                    </div>
+                    <span class="w2 clearfix">
+                        <span class="s1" >￥28.04</span>
+                        <span class="s2">(含运费：￥0.00)</span>
+                        <span class="s3">
+                            <img src="https://img.alicdn.com/tps/i1/T1xRBqXdNAXXXXXXXX-46-16.png" alt="">
+                        </span>
+                    </span>
+                    <span class="w3">
+                        <ul>
+                            <li><a href="#">交易成功</a></li>
+                            <li><a href="#">订单详情</a></li>
+                            <li><a href="#">查看物流</a></li>
+                        </ul>
+                    </span>
+                    <div class="w4 clearfix">
+                        <div class="pingjia">评价</div>
+                        <div class="kaipiao">申请开票</div>
+                    </div>
+                    <div class="w5">
+                        <a href="#">保险服务</a>
+                        <span>￥0.00</span>
+                    </div>
+               
+            </div>
+
+            <div class="fanye clearfix">
+                <span class="jingzhi" style="color: #c4c4d4;"><</span>
+                <span class="f1" style="color: white;background-color: #f40; " class="chang">1</span>
+                <span class="f1">2</span>
+                <span class="f1">3</span>
+                <span class="f1">4</span>
+                <span class="f1">></span>
+        </div>
+        </div>
+        
+    </div>
+
+    <div class="lunbo-head clearfix">
+            <div class="lunbo">
+                <ul class="remai">
+                    <li><a href="#" style="color:#f40;font-size: 17px;">热卖单品</a></li>
+                    <li><a href="#">沙发</a></li>
+                    <li><a href="#">帆布鞋</a></li>
+                    <li><a href="#">杯子</a></li>
+                    <li><a href="#">女袜</a></li>
+                    <li><a href="#">电动车</a></li>
+                    <li><a href="#">女包</a></li>
+                    <li><a href="#">新款女装</a></li>
+                    <li><a href="#">女t恤</a></li>
+                    <li><a href="#">男外套</a></li>
+                    <li><a href="#">手链</a></li>
+                    <li><a href="#">牙膏</a></li>
+                    <li><a href="#">斜挎女包</a></li>
+                    <li><a href="#">水杯</a></li>
+                    <li><a href="#">电动牙刷</a></li>
+                    <li><a href="#">床垫</a></li>
+                    <li><a href="#">洗发水</a></li>
+                    <li><a href="#">男拖鞋</a></li>
+                    <li><a href="#">女包包</a></li>
+                    <li><a href="#">男鞋</a></li>
+                    <li><a href="#">更多 ></a></li>
+                    <li class="red-strip"></li>
+                </ul>
+                <div class="silde-head">
+                    <div class="slide">
+                    <ul class="q1">
+                                <li>
+                                    <a href="#">
+                                        <img src="https://gma.alicdn.com/bao/uploaded/i2/355930114/O1CN01L2iSx71CiFqDzidTR_!!2-saturn_solar.png_210x210.jpg" alt="">
+                                    </a>
+                                    <a class="bianse" href="#">
+                                        <div class="big">赵露思推荐参半益</div>
+                                        <div class="small">——特惠大促——</div>
+                                    </a>
+                                    <div class="jia">¥ 99.90
+                                        <span>2401人付款</span>
+                                    </div>
+                                    <img src="../img/购物车1.png" alt="">
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://gma.alicdn.com/bao/uploaded/i4/797410056/O1CN01qCbFlf1CHgrt13Tt2_!!0-saturn_solar.jpg_210x210.jpg" alt="">
+                                    </a>
+                                    <a  class="bianse" href="#">
+                                        <div class="big">泽拉声波电动牙刷</div>
+                                        <div class="small">——热卖宝贝——</div>
+                                    </a>
+                                    <div class="jia">¥ 188.00
+                                        <span>188人付款</span>
+                                    </div>
+                                    <img src="../img/购物车1.png" alt="">
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://gma.alicdn.com/bao/uploaded/i2/355930114/O1CN01LA2OJe1CiFqAi2RUh_!!2-saturn_solar.png_210x210.jpg" alt="">
+                                    </a>
+                                    <a class="bianse"  href="#">
+                                        <div class="big">赵露思同款参半益</div>
+                                        <div class="small">——专属优惠——</div>
+                                    </a>
+                                    <div class="jia">¥ 69.90
+                                        <span>247260人付款</span>
+                                    </div>
+                                    <img src="../img/购物车1.png" alt="">
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://gma.alicdn.com/bao/uploaded/i2/1733590158/O1CN01mBaci81D2PG1jemDW_!!0-saturn_solar.jpg_210x210.jpg" alt="">
+                                    </a>
+                                    <a class="bianse"  href="#">
+                                        <div class="big">COFANCY可糖半</div>
+                                        <div class="small">——活动中——</div>
+                                    </a>
+                                    <div class="jia">¥ 139.00
+                                        <span>58516人付款</span>
+                                    </div>
+                                    <img src="../img/购物车1.png" alt="">
+                                </li>
+                            </ul>
+                            <ul class="q2">
+                                <li>
+                                    <a href="#">
+                                        <img src="https://gma.alicdn.com/bao/uploaded/i2/55673397/O1CN016UYwUe1axs5pMVkTZ_!!0-saturn_solar.jpg_210x210.jpg" alt="">
+                                    </a>
+                                    <a class="bianse" href="#">
+                                        <div class="big">蒸汽眼罩热敷养神</div>
+                                        <div class="small">——精品特惠——</div>
+                                    </a>
+                                    <div class="jia">¥ 109.00
+                                        <span>21人付款</span>
+                                    </div>
+                                    <img src="../img/购物车1.png" alt="">
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://gma.alicdn.com/bao/uploaded/i1/123002308/O1CN01XtW7011Sv6o6RfEnd_!!0-saturn_solar.jpg_210x210.jpg" alt="">
+                                    </a>
+                                    <a class="bianse"  href="#">
+                                        <div class="big">usmile樱花洁白净</div>
+                                        <div class="small">——感恩回馈——</div>
+                                    </a>
+                                    <div class="jia">¥ 69.90
+                                        <span>19187人付款</span>
+                                    </div>
+                                    <img src="../img/购物车1.png" alt="">
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://img.alicdn.com/bao/uploaded/i3/1665950007/O1CN01xnhSdp1BvFSiQuAni_!!0-saturn_solar.jpg_210x210.jpg" alt="">
+                                    </a>
+                                    <a  class="bianse" href="#">
+                                        <div class="big">WOSADO悦瞳零</div>
+                                        <div class="small">——促销特惠——</div>
+                                    </a>
+                                    <div class="jia">¥ 159.00
+                                        <span>15600人付款</span>
+                                    </div>
+                                    <img src="../img/购物车1.png" alt="">
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://gma.alicdn.com/bao/uploaded/i2/43109430/O1CN01p4Dd352JWzaSJkf59_!!0-saturn_solar.jpg_210x210.jpg" alt="">
+                                    </a>
+                                    <a  class="bianse" href="#">
+                                        <div class="big">华为HiLink✅三</div>
+                                        <div class="small">——精品特惠——</div>
+                                    </a>
+                                    <div class="jia">¥ 159.00
+                                        <span>19092人付款</span>
+                                    </div>
+                                    <img src="../img/购物车1.png" alt="">
+                                </li>
+                            </ul>
+                            <ul class="q3">
+                                <li>
+                                    <a href="#">
+                                        <img src="https://gma.alicdn.com/bao/uploaded/i4/1623000085/O1CN01V7MHyl1CUyLvxDy7N_!!0-saturn_solar.jpg_210x210.jpg" alt="">
+                                    </a>
+                                    <a  class="bianse" href="#">
+                                        <div class="big">赵露思推荐参半益</div>
+                                        <div class="small">——特惠大促——</div>
+                                    </a>
+                                    <div class="jia">¥ 99.90
+                                        <span>2401人付款</span>
+                                    </div>
+                                    <img src="../img/购物车1.png" alt="">
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://gma.alicdn.com/bao/uploaded/i1/1718860038/O1CN019EPC7L1C9Rjk3dFmj_!!0-saturn_solar.jpg_210x210.jpg" alt="">
+                                    </a>
+                                    <a  class="bianse" href="#">
+                                        <div class="big">泽拉声波电动牙刷</div>
+                                        <div class="small">——热卖宝贝——</div>
+                                    </a>
+                                    <div class="jia">¥ 188.00
+                                        <span>188人付款</span>
+                                    </div>
+                                    <img src="../img/购物车1.png" alt="">
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://gma.alicdn.com/bao/uploaded/i1/120616481/O1CN01N5uaDr1xkLaAawiHL_!!0-saturn_solar.jpg_210x210.jpg" alt="">
+                                    </a>
+                                    <a class="bianse"href="#">
+                                        <div class="big">赵露思同款参半益</div>
+                                        <div class="small">——专属优惠——</div>
+                                    </a>
+                                    <div class="jia">¥ 69.90
+                                        <span>247260人付款</span>
+                                    </div>
+                                    <img src="../img/购物车1.png" alt="">
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://img.alicdn.com/bao/uploaded/i1/127269578/O1CN018t0oWs2KcmCx58X0S_!!0-saturn_solar.jpg_210x210.jpg" alt="">
+                                    </a>
+                                    <a  class="bianse" href="#">
+                                        <div class="big">COFANCY可糖半</div>
+                                        <div class="small">——活动中——</div>
+                                    </a>
+                                    <div class="jia">¥ 139.00
+                                        <span>58516人付款</span>
+                                    </div>
+                                    <img src="../img/购物车1.png" alt="">
+                                </li>
+                            </ul>
+                            <ul class="q4">
+                                <li>
+                                    <a href="#">
+                                        <img src="https://gma.alicdn.com/bao/uploaded/i3/628290142/O1CN01Z2GjkC1Cv4vht52Y4_!!0-saturn_solar.jpg_210x210.jpg" alt="">
+                                    </a>
+                                    <a  class="bianse" href="#">
+                                        <div class="big">蒸汽眼罩热敷养神</div>
+                                        <div class="small">——精品特惠——</div>
+                                    </a>
+                                    <div class="jia">¥ 109.00
+                                        <span>21人付款</span>
+                                    </div>
+                                    <img src="../img/购物车1.png" alt="">
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://gma.alicdn.com/bao/uploaded/i1/50288808/O1CN01Vs0LiU2Ew7EXzvNbb_!!0-saturn_solar.jpg_210x210.jpg" alt="">
+                                    </a>
+                                    <a class="bianse"  href="#">
+                                        <div class="big">usmile樱花洁白净</div>
+                                        <div class="small">——感恩回馈——</div>
+                                    </a>
+                                    <div class="jia">¥ 69.90
+                                        <span>19187人付款</span>
+                                    </div>
+                                    <img src="../img/购物车1.png" alt="">
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://gma.alicdn.com/bao/uploaded/i2/45506828/O1CN0145QhO620JH1XrwhK3_!!0-saturn_solar.jpg_210x210.jpg" alt="">
+                                    </a>
+                                    <a  class="bianse" href="#">
+                                        <div class="big">WOSADO悦瞳零</div>
+                                        <div class="small">——促销特惠——</div>
+                                    </a>
+                                    <div class="jia">¥ 159.00
+                                        <span>15600人付款</span>
+                                    </div>
+                                    <img src="../img/购物车1.png" alt="">
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://gma.alicdn.com/bao/uploaded/i3/15488705/O1CN01LUR6E02EAwRQgtBdo_!!0-saturn_solar.jpg_210x210.jpg" alt="">
+                                    </a>
+                                    <a class="bianse"  href="#">
+                                        <div class="big">华为HiLink✅三</div>
+                                        <div class="small">——精品特惠——</div>
+                                    </a>
+                                    <div class="jia">¥ 159.00
+                                        <span>19092人付款</span>
+                                    </div>
+                                    <img src="../img/购物车1.png" alt="">
+                                </li>
+                            </ul>
+                            <ul class="q5">
+                                <li>
+                                    <a href="#">
+                                        <img src="https://gma.alicdn.com/bao/uploaded/i4/130353714/O1CN01WAKOv81dJ3f3ATnvx_!!0-saturn_solar.jpg_210x210.jpg" alt="">
+                                    </a>
+                                    <a  class="bianse" href="#">
+                                        <div class="big">赵露思推荐参半益</div>
+
+                                        <div class="small">——特惠大促——</div>
+                                    </a>
+                                    <div class="jia">¥ 99.90
+                                        <span>2401人付款</span>
+                                    </div>
+                                    <img src="../img/购物车1.png" alt="">
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://gma.alicdn.com/bao/uploaded/i3/1654490103/O1CN01de6jRx1CdDTT4TsEJ_!!0-saturn_solar.jpg_210x210.jpg" alt="">
+                                    </a>
+                                    <a class="bianse"href="#">
+                                        <div class="big">泽拉声波电动牙刷</div>
+                                        <div class="small">——热卖宝贝——</div>
+                                    </a>
+                                    <div class="jia">¥ 188.00
+                                        <span>188人付款</span>
+                                    </div>
+                                    <img src="../img/购物车1.png" alt="">
+                                </li>
+                                <li>
+                                    <a  href="#">
+                                        <img src="https://gma.alicdn.com/bao/uploaded/i4/122266854/O1CN013e5MRa20VBJlQHr0s_!!0-saturn_solar.jpg_210x210.jpg" alt="">
+                                    </a>
+                                    <a  class="bianse" href="#">
+                                        <div class="big">赵露思同款参半益</div>
+                                        <div class="small">——专属优惠——</div>
+                                    </a>
+                                    <div class="jia">¥ 69.90
+                                        <span>247260人付款</span>
+                                    </div>
+                                    <img src="../img/购物车1.png" alt="">
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://gma.alicdn.com/bao/uploaded/i2/130408666/O1CN01fXynTO2Dt4z4eB2yu_!!0-saturn_solar.jpg_210x210.jpg" alt="">
+                                    </a>
+                                    <a  class="bianse" href="#">
+                                        <div class="big">COFANCY可糖半</div>
+                                        <div class="small">——活动中——</div>
+                                    </a>
+                                    <div class="jia">¥ 139.00
+                                        <span>58516人付款</span>
+                                    </div>
+                                    <img src="../img/购物车1.png" alt="">
+                                </li>
+                            </ul>
+                            <ul class="q6">
+                                <li>
+                                    <a href="#">
+                                        <img src="https://gma.alicdn.com/bao/uploaded/i2/355930114/O1CN01L2iSx71CiFqDzidTR_!!2-saturn_solar.png_210x210.jpg" alt="">
+                                    </a>
+                                    <a class="bianse" href="#">
+                                        <div class="big">赵露思推荐参半益</div>
+                                        <div class="small">——特惠大促——</div>
+                                    </a>
+                                    <div class="jia">¥ 99.90
+                                        <span>2401人付款</span>
+                                    </div>
+                                    <img src="../img/购物车1.png" alt="">
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://gma.alicdn.com/bao/uploaded/i4/797410056/O1CN01qCbFlf1CHgrt13Tt2_!!0-saturn_solar.jpg_210x210.jpg" alt="">
+                                    </a>
+                                    <a  class="bianse" href="#">
+                                        <div class="big">泽拉声波电动牙刷</div>
+                                        <div class="small">——热卖宝贝——</div>
+                                    </a>
+                                    <div class="jia">¥ 188.00
+                                        <span>188人付款</span>
+                                    </div>
+                                    <img src="../img/购物车1.png" alt="">
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://gma.alicdn.com/bao/uploaded/i2/355930114/O1CN01LA2OJe1CiFqAi2RUh_!!2-saturn_solar.png_210x210.jpg" alt="">
+                                    </a>
+                                    <a class="bianse"  href="#">
+                                        <div class="big">赵露思同款参半益</div>
+                                        <div class="small">——专属优惠——</div>
+                                    </a>
+                                    <div class="jia">¥ 69.90
+                                        <span>247260人付款</span>
+                                    </div>
+                                    <img src="../img/购物车1.png" alt="">
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://gma.alicdn.com/bao/uploaded/i2/1733590158/O1CN01mBaci81D2PG1jemDW_!!0-saturn_solar.jpg_210x210.jpg" alt="">
+                                    </a>
+                                    <a class="bianse"  href="#">
+                                        <div class="big">COFANCY可糖半</div>
+                                        <div class="small">——活动中——</div>
+                                    </a>
+                                    <div class="jia">¥ 139.00
+                                        <span>58516人付款</span>
+                                    </div>
+                                    <img src="../img/购物车1.png" alt="">
+                                </li>
+                            </ul>
+                </div>
+                </div>
+            
+            
+            </div>
+            <a class="a1"id="an" href="#"></a>
+            <a id="an"href="#"></a>
+            <a id="an"href="#"></a>
+            <a id="an" href="#"></a>
+            <a id="an" href="#"></a>
+            <a class="qian"href="#">&nbsp;<i class="iconfont icon-left-s" style="font-size: 8px;"></i></a>
+            <a class="hou"href="#"> &nbsp;<i class="iconfont icon-right-s" style="font-size: 8px;"></i></a>
+            <a class="huan"href="#" style="font-size: 12px;">&nbsp;&nbsp;换一组</a>
+    </div>
+    
+    <div class="end">
+        <div class="b1">
+        <a href="#">阿里巴巴集团</a>
+        <span>|</span>
+        <a href="#">淘宝网</a>
+        <span>|</span>
+        <a href="#">天猫</a>
+        <span>|</span>
+        <a href="#">聚划算</a>
+        <span>|</span>
+        <a href="#">全球速卖通</a>
+        <span>|</span>
+        <a href="#">阿里巴巴国际交易市场</a>
+        <span>|</span>
+        <a href="#">1688</a>
+        <span>|</span>
+        <a href="#">阿里妈妈</a>
+        <span>|</span>
+        <a href="#">飞猪</a>
+        <span>|</span>
+        <a href="#">阿里云计算</a>
+        <span>|</span>
+        <a href="#">AliOS</a>
+        <span>|</span>
+        <a href="#">阿里通信</a>
+        <span>|</span>
+        <a href="#">一淘</a>
+        <span>|</span>
+        <a href="#">万网</a>
+        <span>|</span>
+        <a href="#">高德</a>
+        <span>|</span>
+        <a href="#">UC</a>
+        <span>|</span>
+        <a href="#">友盟</a>
+        <span>|</span>
+        <a href="#">阿里安全</a>
+        <div class="b2">
+            <a href="#">大麦网</a>
+                <span>|</span>
+                <a href="#">钉钉</a>
+                <span>|</span>
+                <a href="#">支付宝</a>
+                <span>|</span>
+                <a href="#">优酷</a>
+                <span>|</span>
+                <a href="#">土豆</a>
+                <span>|</span>
+                <a href="#">阿里健康</a>
+                <span>|</span>
+                <a href="#">阿里影业</a>
+                <span>|</span>
+                <a href="#">阿里体育</a>
+                <span>|</span>
+                <a href="#">网商银行</a>
+        </div>
+        </div>
+        <div class="b9">
+            <a href="#">关于天猫</a>
+                    <a href="#">商家服务大厅</a>
+                    <a href="#">开放平台</a>
+                    <a href="#">诚聘英才</a>
+                    <a href="#">联系我们</a>
+                    <a href="#">网站合作</a>
+                    <a href="#">法律声明</a>
+                    <a href="#">隐私权政策</a>
+                    <a href="#">知识产权</a>
+        </div>
+        <div class="b3">
+                    <a href="#">增值电信业务经营许可证：浙B2-20110446</a>
+                    <span>市场名称登记证：工商网市字3301004119号</span>
+                    <span>出版物网络交易平台服务经营备案证： 新出发浙备字第2019002号</span>
+                </div>
+                <div class="b4">
+                    <span>互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</span>
+                    <span>互联网药品信息服务资质证书编号：
+                        <a href="#">浙-（经营性）-2017-0005</a>
+                    </span>
+                    <span> 
+                        <img src="//img.alicdn.com/tps/TB1yEqRPXXXXXXPXpXXXXXXXXXX-20-20.png" style="position:relative;top:5px;vertical-align:baseline;" data-spm-anchor-id="a2240.7829288.a2226n1.i2.1c364fe5U9vQS2">
+                        浙公网安备 33010002000120号</span>
+                </div>
+                <div class="b5">
+                    <span>医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00002号</span>
+                </div>
+                <div class="c6">
+                    <span>浙江省网络食品销售第三方平台提供者备案：浙网食A33010002</span>
+                    <span class="special">12318举报</span>
+                    <span class="special">浙B2-20110446-1</span>
+                </div>
+                <div class="c7">
+                    <span class="special">© 2003-2020 TMALL.COM 版权所有</span>
+                </div>
+
+    </div>
+
+    <div class="bee">
+        <img src="../img/bee.png" width="70px" height="70px" alt="">
+        <div class="z">
+            <ul>
+                <li class="e1">
+                    <a href="#">如何查看物流信息</a>
+                </li>
+                <li class="e2">
+                    <a href="#">如何修改收获地址</a>
+                </li>
+                <li class="e3">
+                    <a href="#"><i class="iconfont icon-wenhao" style="font-size: 17px; color: white;"></i>点我提问</a>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+</body>
+</html>

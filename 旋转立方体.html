@@ -1,0 +1,122 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+	 <meta charset="UTF-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <title>
+		旋转立体
+	 </title>
+	 <link rel="stylesheet" href="../source/chongzhi.css">
+	 <link rel="stylesheet" href="../layout/css/all.css">
+	 <style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			perspective: 1000px;
+			/* 表示两种或多种颜色线性渐变的图片 */
+			background: linear-gradient(to bottom,#c0392b,#16a085,#2980b9);
+		}
+		.wrap{
+			/* vh，是指 CSS 中相对长度单位，表示相对 视口 高度（Viewport Height），1vh = 1% * 视口 高度。 */
+			height: 33.3vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.cube{
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			/* 设置元素的子元素是位于 3D 空间中还是平面中 */
+			/* 有两个选择值：
+			preserve-3d：3D空间中
+			flat：平面中 */
+			transform-style:preserve-3d;
+			/* 注意，在变形元素自身上指定该属性是没有用的，它用于指定舞台，所以要在变形元素的父元素上设置该属性。 */
+			/* transform本质上是一系列变形函数，分别是translate位移，scale缩放，rotate旋转，skew扭曲，matrix矩阵。 */
+			/* 如果同时设了transform-style: preserve-3d;和overflow: hidden;，3D效果将失效，等价于transform-style: flat;。如果你发现3D效果没有像预想地那样出现，可以检查一下（包括祖先元素）是否有overflow: hidden;，该属性将flatten everything… */
+			transform: rotateY(45deg) rotateX(45deg) ;
+			  /* 动画调用 调用名为rotate的动画，执行周期是5s，线性速度变化，永久变化 */
+			animation: cube 8s linear infinite;
+		}
+		.cube .side{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			box-sizing: border-box;
+			border: 1px solid #000;
+			padding: 10px;
+			background-color: #fff; 
+		}
+		/* rotateX是以X轴为旋转轴，translate移动的位置是以旋转后的面为X-Y平面，不是以旋转前的面 */
+		.cube .cube-front{
+			/* 前面先不动 */
+			transform: rotateY(0deg) translateZ(100px);
+		}
+		.cube .cube-back{
+			/* 后面绕y轴旋转180度 */
+			transform: rotateY(180deg) translateZ(100px);
+		}
+		.cube .cube-left{
+			transform: rotateY(-90deg) translateZ(100px);
+		}
+		.cube .cube-right{
+			transform: rotateY(90deg) translateZ(100px);
+		}
+		.cube .cube-top{
+			/* 上面绕x轴旋转90 */
+			transform: rotateX(90deg) translateZ(100px);
+		}
+		.cube .cube-bottom{
+			/* 底面绕x轴旋转-90 */
+			transform: rotateX(-90deg) translateZ(100px);
+		}
+		@keyframes cube{
+			0%{
+				transform: rotateY(0deg) rotateX(-45deg);
+			}
+			100%{
+				transform: rotateY(360deg) rotateX(-45deg);
+			}
+		}
+		.cube:hover{
+			animation-play-state: paused;
+		}
+	 </style>
+ </head>
+<body>
+	<div class="wrap"><h1>i am header!</h1></div>
+	<div class="wrap">
+		<div class="cube">
+			<div class="side cube-front">
+				<h2>front</h2>
+				<p>if you smile upon the wrold,it will smile upon you.</p>
+			</div>
+			<div class="side cube-back">
+				<h2>back</h2>
+				<p>if you smile upon the wrold,it will smile upon you.</p>
+			</div>
+			<div class="side cube-left">
+				<h2>left</h2>
+				<p>if you smile upon the wrold,it will smile upon you.</p>
+			</div>
+			<div class="side cube-right">
+				<h2>right</h2>
+				<p>if you smile upon the wrold,it will smile upon you.</p>
+			</div>
+			<div class="side cube-top">
+				<h2>top</h2>
+				<p>if you smile upon the wrold,it will smile upon you.</p>
+			</div>
+			<div class="side cube-bottom">
+				<h2>bottom</h2>
+				<p>if you smile upon the wrold,it will smile upon you.</p>
+			</div>
+		</div>
+	</div>
+	<div class="wrap"><h1>i am footer!</h1></div>
+</body>
